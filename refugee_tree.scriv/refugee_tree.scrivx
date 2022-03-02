@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="F638883D-D864-4193-AF81-5A514E684649" Version="2.0" Creator="SCRMAC-3.2.2-14632" Device="Beratungs-MacBook-Pro-2" Author="" Modified="2022-02-21 16:38:10 +0100" ModID="9A70CC20-50A6-4AE8-B647-4E6815A6635C">
+<ScrivenerProject Identifier="F638883D-D864-4193-AF81-5A514E684649" Version="2.0" Creator="SCRMAC-3.2.2-14632" Device="Beratungs-MacBook-Pro-2" Author="" Modified="2022-03-02 16:46:32 +0100" ModID="0816E128-EEFB-4AB9-BC16-ED03D8CBD2F1">
     <Binder>
         <BinderItem UUID="F9FF68E3-0EDE-4A41-B809-782DF388FE05" Type="DraftFolder" Created="2021-08-30 19:30:24 +0200" Modified="2021-08-30 19:30:24 +0200">
             <Title>Entwurf</Title>
@@ -144,6 +144,47 @@
                             <TextSettings>
                                 <TextSelection>2352,0</TextSelection>
                             </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="FFA38A01-40E2-4985-A41F-8FF60DB57BA4" Type="Folder" Created="2022-03-02 16:26:04 +0100" Modified="2022-03-02 16:28:16 +0100">
+                    <Title>4 Vajradhara Dorje Chang</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="073679DB-E4CD-452F-908E-1248163486BB" Type="Text" Created="2022-02-21 15:43:16 +0100" Modified="2022-03-02 16:45:12 +0100">
+                            <Title>credits</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>23,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="5C5E4598-95DE-454E-845C-FC2CB68A45AF" Type="Text" Created="2022-03-02 16:27:45 +0100" Modified="2022-03-02 16:43:30 +0100">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>2167,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="24FDFD96-5491-4E00-B90F-D6EBD459B36C" Type="Image" Created="2022-03-02 16:44:17 +0100" Modified="2022-03-02 16:44:17 +0100">
+                            <Title>Thangka_of_Vajradhara</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
                         </BinderItem>
                     </Children>
                 </BinderItem>
@@ -931,6 +972,15 @@
                         <ImageScalesProportionally>No</ImageScalesProportionally>
                     </MediaSettings>
                 </BinderItem>
+                <BinderItem UUID="FD53285A-34D8-4380-90E8-0B0ECFC6D261" Type="Text" Created="2021-08-30 19:38:38 +0200" Modified="2021-08-30 19:43:42 +0200">
+                    <Title>Dolpopa-1</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>1998,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
             </Children>
         </BinderItem>
         <BinderItem UUID="0991FD7C-34A8-4919-B992-B2CB5D4A9F08" Type="Text" Created="2021-09-06 16:01:06 +0200" Modified="2021-09-06 16:02:17 +0200">
@@ -1038,14 +1088,14 @@
     </StatusSettings>
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2021-08-30 19:30:22 +0200" IgnoreDeadline="Yes">0</DraftTarget>
-        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2022-02-22 00:00:00 +0100" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="0" Characters="0" Date="2022-02-21 16:34:43 +0100"/>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2022-03-03 00:00:00 +0100" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
+        <PreviousSession Words="0" Characters="0" Date="2022-03-02 16:10:09 +0100"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2022-02-21 00:00:00 +0100">
+    <RecentWritingHistory Date="2022-03-02 00:00:00 +0100">
         <DraftWordCount>0</DraftWordCount>
         <DraftCharCount>0</DraftCharCount>
-        <OtherWordCount>369</OtherWordCount>
-        <OtherCharCount>2355</OtherCharCount>
+        <OtherWordCount>327</OtherWordCount>
+        <OtherCharCount>2191</OtherCharCount>
     </RecentWritingHistory>
     <PrintSettings PaperSize="595.275546,841.889771" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"/>
 </ScrivenerProject>

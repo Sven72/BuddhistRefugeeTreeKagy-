@@ -58,6 +58,11 @@
 			<key>Row</key>
 			<integer>-1</integer>
 		</dict>
+		<key>073679DB-E4CD-452F-908E-1248163486BB</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
 		<key>0991FD7C-34A8-4919-B992-B2CB5D4A9F08</key>
 		<dict>
 			<key>Row</key>
@@ -114,6 +119,11 @@
 			<integer>-1</integer>
 		</dict>
 		<key>22972718-14BE-4A2D-B2C2-538B1DCE9577</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>24FDFD96-5491-4E00-B90F-D6EBD459B36C</key>
 		<dict>
 			<key>Row</key>
 			<integer>-1</integer>
@@ -184,6 +194,11 @@
 			<integer>-1</integer>
 		</dict>
 		<key>5A329D8A-34A7-4727-9301-087264B255A8</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>5C5E4598-95DE-454E-845C-FC2CB68A45AF</key>
 		<dict>
 			<key>Row</key>
 			<integer>-1</integer>
@@ -463,6 +478,16 @@
 			<key>Row</key>
 			<integer>-1</integer>
 		</dict>
+		<key>FD53285A-34D8-4380-90E8-0B0ECFC6D261</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>FFA38A01-40E2-4985-A41F-8FF60DB57BA4</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
 	</dict>
 	<key>collectionsRepresentedBinderDocumentsInfo</key>
 	<dict>
@@ -488,14 +513,14 @@
 		<real>1</real>
 	</dict>
 	<key>mainDocumentEditor.scrollRect</key>
-	<string>{{0, 258}, {620, 417}}</string>
+	<string>{{0, 0}, {620, 417}}</string>
 	<key>mainDocumentEditor.textEditorState</key>
 	<dict>
 		<key>textScaleFactor</key>
 		<real>2</real>
 	</dict>
 	<key>mainWindowFrame</key>
-	<string>967 387 1593 948 0 0 2560 1415 </string>
+	<string>541 399 1593 948 0 0 2560 1415 </string>
 	<key>supportingDocumentEditor.dockedQRTextSettings</key>
 	<dict>
 		<key>textScaleFactor</key>
