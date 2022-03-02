@@ -1,0 +1,35 @@
+check why event.preventdefault()
+areaClickHandler = event => {
+  event.preventDefault();
+  const area = event.target;
+  console.log(area.title);
+};
+
+
+Remember this:
+
+renderModal = clickedObject => {
+  objectName.innerText = clickedObject.firstName;
+  objectLifetime.innerText = clickedObject.Lives;
+  objectBio.innerText = clickedObject.bio;
+
+
+  // let objectImage = document.createElement('img')
+  // Clickpath out of DOM for clicked element
+  let imgPath = clickedObject.img;
+  // objectImage.setAttribute('src', imgPath);
+  // modalElement.appendChild(objectImage);
+
+
+  document.getElementById('objectImg').src = imgPath;
+
+  // WO CHECKEN, OB Datensatz IMG enthält?
+  modal.classList.add("show-modal");
+
+};
+
+
+little change
+
+Coordinates to place sth
+https://stackoverflow.com/questions/19360728/converting-an-area-into-a-div-with-the-exact-same-position-and-shape-using-j

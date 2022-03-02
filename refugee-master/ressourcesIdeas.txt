@@ -1,0 +1,101 @@
+- Lehrer button
+- Schüler button
+- Tooltip mit Karte
+- Schriften
+
+SVG
+https://www.sitepoint.com/how-to-translate-from-dom-to-svg-coordinates-and-back-again/
+
+Image Map generator
+https://www.image-map.net/
+
+
+https://css-tricks.com/the-many-ways-to-link-up-shapes-and-images-with-html-and-css/
+
+
+
+https://kagyuoffice.org/kagyu-lineage/
+
+
+Zu Modals
+https://webdesign.tutsplus.com/tutorials/how-to-build-flexible-modal-dialogs-with-html-css-and-javascript--cms-33500
+
+
+Idee für Modal-Gestaltung:
+https://dev.to/harshhhdev/ui-design-trend-of-2021-4fb7
+
+
+Wg. Bildrechten
+https://ganachakra.com/tag/mahamudra-2/
+
+Gampopa -> Chandra Prabha Kumara von Buddha prophezeit.
+
+
+Highlight clicked areas in map
+
+
+http://leksheyling.net/pages/english/Lineages/KagyuGoldenrosary/019_kun-mkhyen-%27jam-dpal-bzang-po.htm
+
+Zu SVG
+https://medium.com/better-programming/creating-an-interactive-map-using-svg-and-css-94a688c11bd6
+
+https://www.w3schools.com/graphics/svg_intro.asp
+
+Don't accept changes. 
+
+9. Karmapa:
+JEWELS FROM THE TREASURY
+This book contains a translation of one of the greatest presentations of abhidharma in any tradition: Vasubandhu’s Verses on the Treasury of Abhidharma, along with the 9th Karmapa Wangchuk Dorje’s clear and concise explanation of it, Youthful Play (ཆོས་མངོན་པ་མཛོད་དང་། དེའི་འགྲེལ་པ་གཞོན་ནུ་རྣམ་རོལ།), translated by David Karma Choephel.
+
+
+Based on this question
+https://www.sitepoint.com/community/t/how-to-position-modal-dialog-at-x-y-coordinates-of-click-event/224882
+
+I came up with first idea to place modal near clicked object:
+window.addEventListener('click', (evt) => {
+console.log(evt.clientX);
+})
+
+
+Template Literals
+https://www.taniarascia.com/understanding-template-literals/
+
+100 Syllable Mantra:
+
+mantra: "OM \nSyllable of the most supreme exclamation of praise.\nBENZAR SATO SA MA YA\nVajrasattva’s Samaya \nMA NU PA LA YA BENZAR SATO \nO Vajrasattva, protect the samaya.\nTE NO PA TISHTHA DRI DHO ME BHA WA\nMay you remain firm in me.\nSU TO KA YO ME BHA WA\n Grant me complete satisfaction.\n SU PO KA YO ME BHA WA\nGrow within me increase the positive within me.\nANU RAKTO ME BHA WA\nBe loving towards me.\SARVA SIDDHI ME PRA YATSA\nGrant me all the accomplishments,\nSARVA KARMA SU TSA ME\nAs well as all the activities.\nTSITTAM SHRE YAM KU RU \nMake my mind virtuous.\nHUNG\nSyllable of the heart essence, the seed syllable  of Vajrasattva.\nHA HA HA HA\nSyllables of the four immeasurables, the four empowerments, the four joys, and the four kāyas.\nHO\nSyllable of joyous laughter in them.\nBHA GA WAN SARVA TA THA GA TA\nBhagawan, who embodies all the Vajra Tathāgatas,\nBENZRA MA ME MUNTSA\nDo not abandon me.\nBENZRI BHA WA\nGrant me realization of the vajra nature.\nMA HA SA MA YA SATO\nO great Samayasattva,\nAH\nMake me one with you.\nSyllable of uniting in non - duality.\n
+    ",
+
+
+
+    In Merit O
+    
+    Chökyi Wangchuk, the Sixth Shamar Rinpoche (1584c.1635), was recognized at an early age by his principal guru, the Ninth Gyalwang Karmapa, Wangchuk Dorje. Demonstrating swift accomplishment in his training and tremendous proficiency in debate and scholarship, he became one of the most renowned panditas of his era. He traveled and taught extensively throughout Tibet, China, and Nepal, and performed vast activity for the benefit of beings. Just as the Golden Garland of the Kagyu succession continued with Chökyi Wangchuk himself, he in turn recognized the tenth incarnation of the Gyalwang Karmapa, Chöying Dorje, who then became his principal disciple.
+
+
+(BARDO)
+
+Style der SELECTBOX:
+https://stackoverflow.com/questions/1895476/how-do-i-style-a-select-dropdown-with-only-cssbject: "Emanation of …"
+
+    Einsetzen, statt "push"?
+    const slides = Array.from(track.children);
+    -> slider Tutorial KP
+
+
+Aus Bardo Intervall of Possibility 
+    Chökyi Wangchuk, the Sixth Shamar Rinpoche (1584c.1635), was recognized at an early age by his principal guru, the Ninth Gyalwang Karmapa, Wangchuk Dorje. 
+
+
+    Lösung für unescaped Linebreaks in Objects finden …
+
+    Chökyi Wangchuk, the Sixth Shamar Rinpoche (1584c.1635), was recognized at an early age by his principal guru, the Ninth Gyalwang Karmapa, Wangchuk Dorje. Demonstrating swift accomplishment in his training and tremendous proficiency in debate and scholarship, he became one of the most renowned panditas of his era. He traveled and taught extensively throughout Tibet, China, and Nepal, and performed vast activity for the benefit of beings. Just as the Golden Garland of the Kagyu succession continued with Chökyi Wangchuk himself, he in turn recognized the tenth incarnation of the Gyalwang Karmapa, Chöying Dorje, who then became his principal disciple.
+
+
+(BARDO)
+
+Style der SELECTBOX:
+https://stackoverflow.com/questions/1895476/how-do-i-style-a-select-dropdown-with-only-css
+
+
+Bilder wie hier wegclickbar
+https://treasuryoflives.org/biographies/view/Pomdrakpa-Sonam-Dorje/4140

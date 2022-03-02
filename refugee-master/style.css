@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  object-fit: cover;
+}
+
+/* When changing position of container, marker does not work properly */
+/* .image-container {
+  margin-left: 10em;
+} */
+
+/* Contemp. Modal = Place below */
+
+.modal-container--contemp {
+  display: none;
+  position: absolute;
+}
+
+.modal--contemp {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* Styling modal */
+
+.modal-container {
+  display: none;
+  position: absolute;
+}
+
+.modal-header p {
+  color: #0000;
+  font-size: 10px;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
+
+.modal-content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-gap: 15px;
+  width: 708px;
+  height: 920px;
+  background-color: rgba(44, 64, 245, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: scroll;
+  border-radius: 20px;
+}
+
+.close-btn {
+  background: transparent;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn-contemporary {
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 5px;
+  padding: 2px 2px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  grid-row: 3/3;
+  grid-column: 11/12;
+}
+
+.btn-contemporary:hover {
+  background: #fff;
+  color: black;
+}
+
+#objectImg {
+  grid-column: 2/5;
+  grid-row: 2/10;
+  width: 100%;
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 1s, width 2s;
+}
+
+#objectImg:hover {
+  width: 200%;
+  border: 5px solid red;
+  border-radius: 20px;
+  opacity: 1;
+  z-index: 2;
+}
+
+.modalBackground {
+  /* background-color: black; */
+  opacity: 1;
+  z-index: -1;
+  grid-column: 2/5;
+  grid-row: 1/15;
+  margin: -20px;
+}
+
+.objectLineageContainer {
+  grid-column: 7/10;
+  background-color: red;
+  padding: 5px 5px;
+}
+
+.objectNameAge {
+  grid-row: 2/7;
+  grid-column: 6/10;
+}
+
+.objectTeacherDiscipleWork {
+  grid-column: 6 /10;
+  grid-row: 4/6;
+  margin: -5px;
+}
+
+.objectQuotedMantraPredicted {
+  grid-column: 2/11;
+  grid-row: 6 / 15;
+}
+
+/* End of module Style */
+
+.marker-container {
+  position: relative;
+  opacity: 0.8;
+  border: 30px solid red;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  visibility: hidden;
+}
+
+/* BTN Design für Modal. Kommt hierher */
+/* https://www.youtube.com/watch?v=QBfblbmTTF4 */
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  color: var(--clr-text);
+  font-size: 1.125rem;
+  padding: 0.5em;
+  position: relative;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  background: var(--clr-accent);
+  height: 1em;
+  width: 75%;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+}
+
+/* ===Modal Contemp ==== */
+
+.modal-container--contemp {
+  top: 10em;
+  right: 20px;
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  padding-left: 3em;
+  line-height: 25px;
+  border: 3px solid #ffff;
+  background-color: black;
+}
+
+.modal-container--contemp button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 30px;
+  border: 3px solid red;
+  background: transparent;
+  color: red;
+}
+
+.test {
+  color: red;
+  text-transform: uppercase;
+}
