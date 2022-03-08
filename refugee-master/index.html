@@ -13,22 +13,40 @@
 </head>
 
 <body>
+<!-- https://getbootstrap.com/docs/4.3/components/modal/ -->
 
-  <div class="modal" id="mymodal">
-    <div class="modal-dialog">
+<!-- Using the grid
+
+Utilize the Bootstrap grid system within a modal by nesting .container-fluid within the .modal-body. Then, use the normal grid system classes as you would anywhere else. -->
+
+<!-- Embedding YouTube videos
+
+Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. See this helpful Stack Overflow post for more information. -->
+
+
+  <div class="modal  fade" id="mymodal">
+    <!-- Set dimension of modal -->
+    <div class="modal-dialog modal-xl">
+
+      <!-- .modal-body in contrast to modal-content makes bg transparent -->
       <div class="modal-content">
+        <div class="container-fluid">
         <div class="modal-header">
           <h2 class="modal-title" id="objectName">
           </h2>
-<p id="objectLifetime"><span id="objectBirth"></span> - <span id="objectDeath"></span><br>
-          <span id="objectAge"></span>
-        </p>
-    
+          <p id="objectLifetime">
+            <span id="objectBirth"></span> - <span id="objectDeath"></span><br>
+            <span id="objectAge"></span>
+          </p>
+        </div>d
         <img id="objectImg" alt="" />
+
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover for CONTEMPORARIES</button>
 
           <!-- <modal-body id="objectName">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia itaque harum non earum quasi quod qui placeat molestias optio ipsa omnis mollitia veniam modi vel adipisci excepturi sint, possimus sapiente aperiam quisquam? Maxime ipsam cupiditate voluptates vel beatae exercitationem consectetur dolorum quos eligendi repudiandae 
           </modal-body> -->
+          </div>
         </div>
       </div>
     </div>
@@ -59,7 +77,7 @@
     <img src="./img/Bildschirmfoto 2020-05-10 um 12.20.18 Kopie.png" usemap="#refugee-map" />
   </div>
 
-  <map name="refugee-map" id="refugee-map">
+  <map  name="refugee-map" id="refugee-map">
     <!-- Upper left section "Masters of other lineages" -->
     <div></div>
     <area class="open" target="" alt="Padmasambhava" title="Padmasambhava" href="" coords="176,74,30" shape="circle" data-toggle="modal" data-target="#mymodal" />
