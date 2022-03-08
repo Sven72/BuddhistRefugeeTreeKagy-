@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css" />
+  <!-- <link rel="stylesheet" href="./style.css" /> -->
   <title>Refugee Tree</title>
 </head>
 
@@ -18,11 +18,17 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title">Lorem ipsum dolor 
+          <h2 class="modal-title" id="objectName">
           </h2>
-          <modal-body>
+<p id="objectLifetime"><span id="objectBirth"></span> - <span id="objectDeath"></span><br>
+          <span id="objectAge"></span>
+        </p>
+    
+        <img id="objectImg" alt="" />
+
+          <!-- <modal-body id="objectName">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia itaque harum non earum quasi quod qui placeat molestias optio ipsa omnis mollitia veniam modi vel adipisci excepturi sint, possimus sapiente aperiam quisquam? Maxime ipsam cupiditate voluptates vel beatae exercitationem consectetur dolorum quos eligendi repudiandae 
-          </modal-body>
+          </modal-body> -->
         </div>
       </div>
     </div>
@@ -58,9 +64,9 @@
     <div></div>
     <area class="open" target="" alt="Padmasambhava" title="Padmasambhava" href="" coords="176,74,30" shape="circle" data-toggle="modal" data-target="#mymodal" />
     <area class="open" target="" alt="Shantarakshita" title="Shantarakshita" href="" coords="116,119,31"
-      shape="circle" />
+      shape="circle" data-toggle="modal" data-target="#mymodal"/>
     <area class="open" target="" alt="Padampa Sanjay" title="Padampa Sanjay" href="" coords="174,128,24"
-      shape="circle" />
+      shape="circle" data-toggle="modal" data-target="#mymodal" />
     <area class="open" target="" alt="King Trisung Detsun" title="King Trisung Detsun" href="" coords="233,124,30"
       shape="circle" />
     <area class="open" target="" alt="Tsongkhapa" title="Tsongkhapa" href="" coords="89,179,30" shape="circle" />
