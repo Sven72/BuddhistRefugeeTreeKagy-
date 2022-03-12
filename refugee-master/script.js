@@ -138,28 +138,8 @@ renderModal = (clickedObject) => {
   document.getElementById("objectImg").src = imgPath;
 };
 
-let closeModal = () => {
-  modal.classList.remove("show-modal");
-};
-
-// let closeModal = () => {
-
-// };
-
 // ===== Renders Modal for Contemporaries ======
 // =============================================
-
-let closeModelContemp = () => {
-  // displayContemp.innerHTML = "";
-  contempModal.style.display = "none";
-};
-
-displayContemp.addEventListener("click", () => {
-  closeModelContemp();
-});
-closeContemp.addEventListener("click", () => {
-  closeModelContemp();
-});
 
 // Render contemporary modal container
 let renderModalContemp = (contemporaries) => {
