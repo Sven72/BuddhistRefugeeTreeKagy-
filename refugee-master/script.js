@@ -2,6 +2,10 @@ $(function () {
   $('[data-toggle="popover"]').popover();
 });
 
+$(".popover-dismiss").popover({
+  trigger: "focus",
+});
+
 // === Variables related to global
 
 let refugeeMap = document.getElementById("refugee-map");
