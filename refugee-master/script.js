@@ -139,33 +139,6 @@ renderModal = (clickedObject) => {
 // ===== Renders Modal for Contemporaries ======
 // =============================================
 
-// Render contemporary modal container
-let renderModalContemp = (contemporaries) => {
-  contempModal.style.display = "Block";
-  if (contemporaries.length > 0) {
-    for (e in contemporaries) {
-      displayContemp.innerHTML +=
-        "<span>" + contemporaries[e] + "<span>" + "<br>";
-
-      if (
-        contemporaries[e]
-          .split(" ")
-          .includes(clickedObject.firstName.split(" ")[0])
-      ) {
-        displayContemp.childNodes[e].classList.add("test");
-      }
-    }
-  } else if (contemporaries.length == 0) {
-    displayContemp.innerHTML += "SORRY SORRY SORRY";
-  }
-  // console.log(clickedObject.firstName.split(" ")[0]);
-};
-
-// ==================================================
-// ========== Subroutine "Contemporaries" ===========
-
-let btnContemporary = document.getElementById("contemporary");
-
 let searchContemporary = () => {
   let contemporaries = [];
 
@@ -192,17 +165,10 @@ let searchContemporary = () => {
   renderModalContemp(contemporaries);
 };
 
-// ==== Close modal & modalContemp depending on click target
+// const contempus = document.getElementById("contemporary");
+// contempus.addEventListener("click", searchContemporary());
 
-modal.addEventListener("click", (e) => {
-  if (e.target.classList.contains("btn-contemporary")) {
-    searchContemporary();
-  } else if (e.target.classList.contains("close-btn--contemp")) {
-    closeModelContemp();
-  } else if (e.target.parentNode.classList.contains("close-btn")) {
-    closeModal();
-  }
-});
+// ==== Close modal & modalContemp depending on click target
 
 areaClickHandler = (event) => {
   event.preventDefault();
