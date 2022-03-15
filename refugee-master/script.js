@@ -10,18 +10,12 @@ $(".popover-dismiss").popover({
 
 let refugeeMap = document.getElementById("refugee-map");
 
-// === Variables related to basic modal
-let modal = document.getElementById("modal");
-let close = document.getElementById("close");
-let open = document.getElementById("open");
-let modalContent = document.getElementsByClassName("modal-content");
-
 // === Variables related to contemporary modal
 let closeContemp = document.getElementById("close--contemp");
 let contempModal = document.getElementsByClassName(
   "modal-container--contemp"
 )[0];
-let displayContemp = document.getElementById("allContemp");
+// let displayContemp = document.getElementById("allContemp");
 
 // ===== Window on click, wenn modals / markers offen, close.
 
