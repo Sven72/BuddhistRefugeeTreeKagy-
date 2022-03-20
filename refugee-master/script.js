@@ -2,6 +2,10 @@ $(function () {
   $('[data-toggle="popover"]').popover();
 });
 
+meritObjects.forEach((object) => {
+  console.log(parseInt(object.birth, 10));
+});
+
 $(".popover-dismiss").popover({
   trigger: "focus",
 });
