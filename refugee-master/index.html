@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- TODO: Schreibe eine Funktion, die bei document load alle Contemporaries berechnet -->
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,6 +37,8 @@ Embedding YouTube videos in modals requires additional JavaScript not in Bootstr
           <p id="objectLifetime">
             <span id="objectBirth"></span> - <span id="objectDeath"></span><br>
             <span id="objectAge"></span>
+            <!-- ########### Hier sind jetzt die Zeitgenossen integriert #####  -->
+            <ul class="custom-title"></ul>
           </p>
         </div>
         <div class="row">
@@ -65,14 +65,6 @@ Embedding YouTube videos in modals requires additional JavaScript not in Bootstr
           <div class="col"></div>
           <!-- <div class="col"></div> -->
           <div class="col"> 
-            <!-- TODO: Do I need a data-content? -->
-
-          
-            <!-- TODO: Modal Content dynamisch ausspielen: Zeitgenossen / Schüler -->
-            <button type="button" id="contemporary" class="popover-dismiss btn-lg btn-danger" 
-            data-html="true"
-            data-toggle="popover" title="Popover title" 
-            data-content="Here should contemporaries be displayed">Click to toggle popover for CONTEMPORARIES</button>
           </div>
         </div>
           </div>
@@ -83,16 +75,8 @@ Embedding YouTube videos in modals requires additional JavaScript not in Bootstr
 
   <h1>Our Living Tradition</h1>
 
-  <!-- Install Modalç -->
-  <!-- https://www.youtube.com/watch?v=jp_p6wCkc9I -->
-  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button> -->
 
 
-  <div class="marker-container" id="marker">
-    <div class="marker"></div>
-  </div>
   <label for="searchLineageMaster">Search Master:</label>
   <select name="searchLineageMaster" id="searchLineageMaster">
   </select>
@@ -213,21 +197,6 @@ Embedding YouTube videos in modals requires additional JavaScript not in Bootstr
           <span id="objectAge"></span>
         </p>
       </div>
-      <button class="btn-contemporary" id="contemporary">Contemporaries</button>
-
-      <!-- ===== MODAL CONTEMPORARY ====== -->
-      <div class="modal-container--contemp" id="modal-contemp">
-        <!-- <div class="modal--contemp"> -->
-        <button class="close-btn--contemp" id="close--contemp">
-          <i class="fa fa-times"></i>
-        </button>
-        <p id="allContemp" class="myContemp"></p>
-        <!-- <bu                                                                                                                                                                 tton class="close-btn" id="close">
-            <i class="fa fa-times"></i>
-          </button> -->
-
-        <!-- </div> -->
-      </div>
 
       <div class="objectTeacherDiscipleWork">
         <p>Teacher/s: <span id="objectTeacher"></span></p>
@@ -247,8 +216,6 @@ Embedding YouTube videos in modals requires additional JavaScript not in Bootstr
         <p>Biography: <span id="objectBio"></span></p>
 
       </div>
-      <p id="displayContemporaries"></p>
-      <div class="modalBackground"></div>
     </div>
 
 

@@ -1,11 +1,3 @@
-$(function () {
-  $('[data-toggle="popover"]').popover();
-});
-
-$(".popover-dismiss").popover({
-  trigger: "focus",
-});
-
 // === Variables related to global
 
 let refugeeMap = document.getElementById("refugee-map");
@@ -63,18 +55,20 @@ renderModal = (clickedObject) => {
     : (modalPlacement.style.left = coordX + "px");
 
   // As in horizontals axis (above) place modal on y-axis depending on where clicked object is situated
+
+  // TODO: innerHTML in textContent ändern
   modalPlacement.style.top = coordY + "px";
   objectName.innerHTML = clickedObject.firstName;
-  objectAka.innerText = clickedObject.aka;
-  objectBirth.innerText = clickedObject.birth;
-  objectDeath.innerText = clickedObject.death;
-  objectLineage.innerText = clickedObject.lineage;
+  objectAka.innerHTML = clickedObject.aka;
+  objectBirth.innerHTML = clickedObject.birth;
+  objectDeath.innerHTML = clickedObject.death;
+  objectLineage.innerHTML = clickedObject.lineage;
   objectBio.innerHTML = clickedObject.bio;
-  objectPray.innerText = clickedObject.prayer;
-  objectMantra.innerText = clickedObject.mantra;
-  objectWork.innerText = clickedObject.work;
-  objectTeachings.innerText = clickedObject.teachings;
-  objectDisciple.innerText = clickedObject.disciple;
+  objectPray.innerHTML = clickedObject.prayer;
+  objectMantra.innerHTML = clickedObject.mantra;
+  objectWork.innerHTML = clickedObject.work;
+  objectTeachings.innerHTML = clickedObject.teachings;
+  objectDisciple.innerHTML = clickedObject.disciple;
   objectTeacher.innerHTML = clickedObject.teacher;
 
   // Subroutine "Lifespan"
@@ -102,14 +96,28 @@ areaClickHandler = (event) => {
 
   // TODO: Hier per filter loopen und nach Zeitgenossen suchen
   meritObjects.forEach((entry) => {
+    const contemp = document.querySelector(".custom-title");
+    const allContemps = [];
     if (entry.firstName == chosenObject) {
       console.log(entry.firstName);
       // console.log(entry.birth);
-      meritObjects.filter((person) => {
-        if (person.birth < entry.birth) {
-          console.log(person.firstName);
+      meritObjects.filter((meritObject) => {
+        if (
+          entry.birth <= meritObject.birth &&
+          entry.death > meritObject.birth
+        ) {
+          allContemps.push(meritObject.firstName, meritObject.birth);
+        } else if (
+          entry.birth > meritObject.birth &&
+          entry.death < meritObject.death
+        ) {
+          allContemps.push(meritObject.firstName, meritObject.birth);
         }
       });
+      allContemps.forEach((theContemp) => {
+        contemp.insertAdjacentHTML("beforeend", `<li>${theContemp}</li>`);
+      });
+      // contemp.textContent = allContemps;
     }
   });
   // This part retrieves the coords data from HTML area

@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrivenerProject Identifier="F638883D-D864-4193-AF81-5A514E684649" Version="2.0" Creator="SCRMAC-3.2.2-14632" Device="Beratungs-MacBook-Pro-2" Author="" Modified="2022-03-02 16:46:32 +0100" ModID="0816E128-EEFB-4AB9-BC16-ED03D8CBD2F1">
+    <Binder>
+        <BinderItem UUID="F9FF68E3-0EDE-4A41-B809-782DF388FE05" Type="DraftFolder" Created="2021-08-30 19:30:24 +0200" Modified="2021-08-30 19:30:24 +0200">
+            <Title>Entwurf</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem UUID="D337B930-6E99-4B76-9500-BA19164839D4" Type="Text" Created="2021-08-30 19:30:24 +0200" Modified="2022-02-10 15:01:05 +0100">
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>296,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem UUID="6650DDD1-F97B-4AEA-94F1-81FF26E2865F" Type="ResearchFolder" Created="2021-08-30 19:30:24 +0200" Modified="2021-08-30 19:30:56 +0200">
+            <Title>Recherche</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem UUID="B9888591-F516-455B-B33B-E400118986EC" Type="Folder" Created="2021-08-30 19:38:24 +0200" Modified="2021-08-30 19:38:31 +0200">
+                    <Title>H Dolpopa</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="9A2F2531-60D2-4712-ABCB-D372B6F671DC" Type="Text" Created="2021-08-30 19:38:38 +0200" Modified="2021-08-30 19:43:42 +0200">
+                            <Title>Dolpopa</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>1998,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="958BC615-6BBD-4A77-B68C-9EBA33DE7FF2" Type="Image" Created="2021-08-30 19:44:01 +0200" Modified="2021-08-30 19:44:01 +0200">
+                            <Title>Dolpopa</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="D3733BE3-5895-45EF-A82C-F44818B6A77B" Type="Folder" Created="2022-02-06 15:08:20 +0100" Modified="2022-02-06 15:08:34 +0100">
+                    <Title>1 Prajnaparamita</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="EBBC99C7-5060-4564-8324-315368A1C83E" Type="Folder" Created="2022-02-06 15:08:20 +0100" Modified="2022-02-21 15:43:10 +0100">
+                    <Title>2 Samanthabadra</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="5A329D8A-34A7-4727-9301-087264B255A8" Type="Text" Created="2022-02-21 15:43:16 +0100" Modified="2022-02-21 16:02:56 +0100">
+                            <Title>credits</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>148,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="41F26255-3EBB-4232-9310-D3FF134065D7" Type="Text" Created="2022-02-21 15:44:57 +0100" Modified="2022-02-21 15:56:56 +0100">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>6594,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="6828DC32-4430-4B48-AA7E-7C6A989DFC4E" Type="Image" Created="2022-02-21 16:11:03 +0100" Modified="2022-02-21 16:11:03 +0100">
+                            <Title>Vajradhara</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="5F0773A1-512D-41C9-96A7-EFB932171BB7" Type="Image" Created="2022-02-21 16:02:28 +0100" Modified="2022-02-21 16:02:28 +0100">
+                            <Title>samanthabadra</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="8F0809C6-46A6-4FF7-95F1-C6409E666285" Type="Folder" Created="2022-02-06 15:08:20 +0100" Modified="2022-02-21 16:12:11 +0100">
+                    <Title>3 Vajrasatva</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="936BDB83-99EC-43AB-A2A3-50046B46E459" Type="Text" Created="2022-02-21 15:43:16 +0100" Modified="2022-02-21 16:12:57 +0100">
+                            <Title>credits</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="7963D809-AB14-48D5-A508-B7AE7CAE6FDD" Type="Text" Created="2022-02-21 15:44:57 +0100" Modified="2022-02-21 16:38:10 +0100">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>2352,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="FFA38A01-40E2-4985-A41F-8FF60DB57BA4" Type="Folder" Created="2022-03-02 16:26:04 +0100" Modified="2022-03-02 16:28:16 +0100">
+                    <Title>4 Vajradhara Dorje Chang</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="073679DB-E4CD-452F-908E-1248163486BB" Type="Text" Created="2022-02-21 15:43:16 +0100" Modified="2022-03-02 16:45:12 +0100">
+                            <Title>credits</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>23,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="5C5E4598-95DE-454E-845C-FC2CB68A45AF" Type="Text" Created="2022-03-02 16:27:45 +0100" Modified="2022-03-02 16:43:30 +0100">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>2167,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="24FDFD96-5491-4E00-B90F-D6EBD459B36C" Type="Image" Created="2022-03-02 16:44:17 +0100" Modified="2022-03-02 16:44:17 +0100">
+                            <Title>Thangka_of_Vajradhara</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="41C26168-77D0-49DB-9595-3B8499F465A6" Type="Folder" Created="2021-09-01 13:08:17 +0200" Modified="2022-02-06 15:09:54 +0100">
+                    <Title>5 Tilopa</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="EEC5B29B-4E57-4508-9C19-FE388FBF462A" Type="Text" Created="2021-09-01 13:08:14 +0200" Modified="2021-09-01 13:19:31 +0200">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>3242,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="AFAFD74B-179E-4F00-8B0D-62E371730505" Type="Image" Created="2021-09-01 13:10:07 +0200" Modified="2021-09-01 13:10:07 +0200">
+                            <Title>Tilopa</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="0B622ABC-795D-4B7F-9D43-989E6669414C" Type="Folder" Created="2021-09-01 13:20:12 +0200" Modified="2022-02-06 15:10:14 +0100">
+                    <Title>6 Naropa</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="92369BAF-91E2-4E31-B1BB-A0ABDF65D76F" Type="Image" Created="2021-09-01 13:21:01 +0200" Modified="2021-09-01 13:21:01 +0200">
+                            <Title>Mahasiddha_Naropa</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="6881A5F6-8D61-44A5-BB7C-DBEBBF263807" Type="Text" Created="2021-09-01 13:22:34 +0200" Modified="2021-09-01 13:31:08 +0200">
+                            <Title>naropa</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>3282,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="8A6F95BC-9A51-4153-AD0D-F101460C8396" Type="Folder" Created="2021-09-02 12:26:20 +0200" Modified="2022-02-06 15:10:40 +0100">
+                    <Title>7 Ratnamati</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="BF4DF9D8-09A5-466D-9160-352EE1FB14E0" Type="Text" Created="2021-09-02 12:26:33 +0200" Modified="2021-09-02 12:32:08 +0200">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>1914,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="BBACFA14-E927-4320-9557-ADA4A3067945" Type="Image" Created="2021-09-02 12:27:45 +0200" Modified="2021-09-02 12:27:45 +0200">
+                            <Title>ratnanati</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="126E651B-6A8F-4612-AE41-EC899D5B35F8" Type="Folder" Created="2021-09-02 12:32:47 +0200" Modified="2022-02-06 15:10:59 +0100">
+                    <Title>8 Saraha</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <CorkboardAndOutliner>
+                        <SelectedSubdocumentUUIDs>A6C515B9-F596-4A60-89C1-EA4BB55FA742</SelectedSubdocumentUUIDs>
+                    </CorkboardAndOutliner>
+                    <Children>
+                        <BinderItem UUID="A6C515B9-F596-4A60-89C1-EA4BB55FA742" Type="Text" Created="2021-09-02 12:32:44 +0200" Modified="2021-09-02 12:42:45 +0200">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>5487,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="AEAF4470-D701-477B-982B-F68E9C85DDB3" Type="Image" Created="2021-09-02 12:33:13 +0200" Modified="2021-09-02 12:33:13 +0200">
+                            <Title>saraha</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="A534A9AC-D29F-43EE-8B05-89644CEB2277" Type="Image" Created="2021-09-02 12:37:52 +0200" Modified="2021-09-02 12:37:52 +0200">
+                            <Title>Sharaha_British_Museum</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="6AC33295-7C84-4EA2-980C-F848301CDEDF" Type="Folder" Created="2021-09-03 11:28:38 +0200" Modified="2022-02-06 15:12:03 +0100">
+                    <Title>9 Nagarjuna</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="20ABA4E3-6733-4B46-AA0B-827541965E60" Type="Text" Created="2021-09-03 11:28:35 +0200" Modified="2021-09-03 11:41:46 +0200">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>2322,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="E598E78C-26D8-4108-8828-8BEE83B168CD" Type="Image" Created="2021-09-03 09:42:54 +0200" Modified="2021-09-03 09:42:54 +0200">
+                            <Title>1024px-Satvahana.svg</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>png</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="9A333063-09D9-4753-90D8-70E90A6257CA" Type="Image" Created="2021-09-03 09:42:54 +0200" Modified="2021-09-03 09:42:54 +0200">
+                            <Title>Eight_Patriarchs_of_the_Shingon_Sect_of_Buddhism_Nagarjuna_Cropped</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="7F784CEF-58D2-4339-98A9-C9C0AFA2C9A6" Type="Image" Created="2021-09-03 09:42:54 +0200" Modified="2021-09-03 09:42:54 +0200">
+                            <Title>Nagarjuna,_Tibet,_1644-1911_AD_-_Sichuan_Provincial_Museum_-_Chengdu,_China_-_DSC04486</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="EB7CFEE7-F428-43FA-A378-02CD3CED89A7" Type="Folder" Created="2021-09-06 15:37:10 +0200" Modified="2022-02-06 15:12:19 +0100">
+                    <Title>10 Shawaripa</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="946F4A1F-DED2-4BD0-8D5F-4234FBDF54D4" Type="Text" Created="2021-09-06 15:37:51 +0200" Modified="2021-09-06 15:45:55 +0200">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>1716,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="56955C43-2414-4E32-B90C-6003859CB2DA" Type="Image" Created="2021-09-06 15:38:54 +0200" Modified="2021-09-06 15:38:54 +0200">
+                            <Title>05_shawaripa</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="C46CAF7A-44C0-45A1-A795-D5F30AEA582C" Type="Image" Created="2021-09-06 15:42:41 +0200" Modified="2021-09-06 15:42:41 +0200">
+                            <Title>shawaripa</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="B5498B91-B57C-48F3-AACD-DA33F32DBD8B" Type="Folder" Created="2021-09-06 15:49:36 +0200" Modified="2022-02-06 15:12:55 +0100">
+                    <Title>11 Maitripa</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <CorkboardAndOutliner>
+                        <SelectedSubdocumentUUIDs>DE289DC3-C74B-45F5-825F-C7DC055A0F70</SelectedSubdocumentUUIDs>
+                    </CorkboardAndOutliner>
+                    <Children>
+                        <BinderItem UUID="DE289DC3-C74B-45F5-825F-C7DC055A0F70" Type="Text" Created="2021-09-06 15:49:45 +0200" Modified="2021-09-06 16:06:59 +0200">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>4797,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="F6C258C0-E9E5-463F-980C-17BA5A453BE2" Type="Image" Created="2021-09-06 15:50:06 +0200" Modified="2021-09-06 15:50:06 +0200">
+                            <Title>Maitripa</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="E1807B51-8E8A-4077-BD90-5B3108509793" Type="Image" Created="2021-09-06 15:51:39 +0200" Modified="2021-09-06 15:51:39 +0200">
+                            <Title>375px-IN-BR.svg</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>png</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="DCC501E1-5EB8-4A9F-A32E-BAE36D4493E4" Type="Image" Created="2021-09-06 15:56:14 +0200" Modified="2021-09-06 15:56:14 +0200">
+                            <Title>Vikramshila_2012-08-10-17.14.08</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="9A52F868-2806-474B-B851-9D13B34C848D" Type="Image" Created="2021-09-06 15:58:45 +0200" Modified="2021-09-06 15:58:45 +0200">
+                            <Title>Maitripa-1</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="8C9B0BAB-4ED0-4116-A2C6-30FC4220E4B5" Type="Folder" Created="2022-02-15 12:32:11 +0100" Modified="2022-02-15 12:32:16 +0100">
+                    <Title>12 Marpa</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="44A9C8AC-F811-482E-915A-6952FD7C3A89" Type="Text" Created="2022-02-15 12:32:32 +0100" Modified="2022-02-15 12:39:15 +0100">
+                            <Title>credits</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>224,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="718FCB9E-0563-417A-A029-BED9F126CE96" Type="Text" Created="2022-02-15 12:33:43 +0100" Modified="2022-02-15 12:44:43 +0100">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>5476,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="0E4081FC-3385-4185-B252-0D08B5851AE5" Type="Image" Created="2022-02-15 12:45:40 +0100" Modified="2022-02-15 12:45:40 +0100">
+                            <Title>Zanskar_Phuktal_01</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="1F121B15-3B00-478C-B6F8-D47CECB3E605" Type="Image" Created="2022-02-15 12:42:27 +0100" Modified="2022-02-15 12:42:27 +0100">
+                            <Title>Phugtal_col</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="0DD5D09C-CC80-4D4E-900E-DE4E068B5416" Type="Image" Created="2022-02-15 12:38:32 +0100" Modified="2022-02-15 12:38:32 +0100">
+                            <Title>08IN1106_stongdey_sunset_concert_on_the_gompa_roof</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="829B8145-5DC6-4D58-ADB2-280C1F76E603" Type="Image" Created="2022-02-15 12:45:44 +0100" Modified="2022-02-15 12:45:45 +0100">
+                            <Title>Zanskar_Phuktal_02</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="0DECA1CD-B5EB-467B-B21B-8F5183E088E2" Type="Image" Created="2022-02-15 12:37:38 +0100" Modified="2022-02-15 12:37:38 +0100">
+                            <Title>Stongdey Monastery</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>png</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="7769928F-CED4-436D-BAEC-DECC1D2A44E3" Type="Folder" Created="2022-02-15 12:57:07 +0100" Modified="2022-02-15 12:57:18 +0100">
+                    <Title>13 Milarepa</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="4605C426-CAEC-4964-8446-AAB191344C14" Type="Text" Created="2022-02-15 12:58:26 +0100" Modified="2022-02-15 13:02:25 +0100">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>3179,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="128D5B18-0DDE-4DBB-B5AF-8E02E594AF90" Type="Image" Created="2022-02-15 13:02:37 +0100" Modified="2022-02-15 13:02:37 +0100">
+                            <Title>Sekhar_Gutog_monastery_in_Lhodrag_near_Bhutan</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                        </BinderItem>
+                        <BinderItem UUID="6D76EB11-DB98-4E6D-9637-DCD074C7C625" Type="Image" Created="2022-02-15 13:03:16 +0100" Modified="2022-02-15 13:03:16 +0100">
+                            <Title>Milarepa,_Pango_Chorten,_Gyantse</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpeg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="02FD892F-633A-4DD3-8E5A-8ED2025C0751" Type="Folder" Created="2022-02-06 15:26:20 +0100" Modified="2022-02-06 15:26:57 +0100">
+                    <Title>16 Drogon Rechen</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="0E09995E-D3B8-4A4A-96B6-A87D47F9BC45" Type="Image" Created="2022-02-06 15:27:38 +0100" Modified="2022-02-06 15:27:38 +0100">
+                            <Title>11_drogon_rechen</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpeg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="55F2BDAF-1F0A-483E-B8FE-C7724E92304F" Type="Text" Created="2022-02-06 15:26:58 +0100" Modified="2022-02-06 15:27:35 +0100">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>4247,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="D95032FE-C87A-4A16-A653-A0D4FF2F49D5" Type="Folder" Created="2022-02-06 15:18:21 +0100" Modified="2022-02-06 15:23:09 +0100">
+                    <Title>19 Orgyenpa</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="5DA100E7-8F65-478F-9A66-619FD80B0EFA" Type="Text" Created="2022-02-06 15:18:51 +0100" Modified="2022-02-06 15:22:12 +0100">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,8</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="7D6F353A-29A0-4821-B4CD-26F6B67307B2" Type="Image" Created="2022-02-06 15:22:48 +0100" Modified="2022-02-06 15:22:48 +0100">
+                            <Title>65861 Orgyenpa</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpeg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="1491184B-5AAC-4940-B437-0B9EE0FBF2D0" Type="Folder" Created="2021-08-30 19:32:15 +0200" Modified="2022-02-06 15:13:32 +0100">
+                    <Title>20 Rangjung Dorje</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <CorkboardAndOutliner>
+                        <SelectedSubdocumentUUIDs>D2E09CCC-3F9A-429E-A91C-16A3CE1A97BA</SelectedSubdocumentUUIDs>
+                    </CorkboardAndOutliner>
+                    <Children>
+                        <BinderItem UUID="D2E09CCC-3F9A-429E-A91C-16A3CE1A97BA" Type="Text" Created="2021-08-30 19:31:00 +0200" Modified="2022-02-10 14:53:49 +0100">
+                            <Title>13 Rangjung Dorje</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>1052,70</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="4A8AAFD6-C00B-4E76-B24F-84B5E1CF085F" Type="Text" Created="2022-02-10 14:58:05 +0100" Modified="2022-02-10 14:59:10 +0100">
+                            <Title>credits</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>164,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="51059E28-AF3E-4C30-9978-FACF1B618CFC" Type="Text" Created="2022-02-10 14:53:50 +0100" Modified="2022-02-10 14:54:25 +0100">
+                            <Title>WICHTIG</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>55,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="171C78EF-A92A-4AA0-8FC4-4BA8AFFB7BA5" Type="Image" Created="2021-08-30 19:36:37 +0200" Modified="2021-08-30 19:36:38 +0200">
+                            <Title>Rangjung_Dorje</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="37C2548A-F0F2-4A4C-B04F-0B64D1E144C9" Type="Image" Created="2022-02-10 14:56:22 +0100" Modified="2022-02-10 14:56:23 +0100">
+                            <Title>Tibet_-_Tsurpu_Monastery_1</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpeg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                        </BinderItem>
+                        <BinderItem UUID="AC5C575A-FEC2-4BD6-B271-0B260F8B2492" Type="Image" Created="2022-02-10 14:57:12 +0100" Modified="2022-02-10 14:57:12 +0100">
+                            <Title>map-tsurphu-monastery</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>png</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="EC0EB40B-B75B-476D-89B8-4F4F4E44881F" Type="Folder" Created="2022-02-10 14:52:32 +0100" Modified="2022-02-10 14:53:09 +0100">
+                    <Title>21 Yungtompa</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="22972718-14BE-4A2D-B2C2-538B1DCE9577" Type="Text" Created="2022-02-10 15:00:24 +0100" Modified="2022-02-10 15:00:37 +0100">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>34,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="584094D1-CAA4-40BF-8BD7-A029AC04BDA2" Type="Folder" Created="2022-02-10 15:02:06 +0100" Modified="2022-02-10 15:02:35 +0100">
+                    <Title>22 Rolpay orje</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="7919A47B-DC88-4BD8-9A98-7EB1EB990EC8" Type="Text" Created="2022-02-10 15:03:09 +0100" Modified="2022-02-10 15:08:38 +0100">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>22,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="47D3250C-1D25-4824-9043-04A62A50285D" Type="Text" Created="2022-02-10 15:08:27 +0100" Modified="2022-02-10 15:13:23 +0100">
+                            <Title>wichtig</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>1015,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="A510EE2A-72D6-4025-B3D3-B32710FB1A69" Type="Text" Created="2022-02-10 15:09:24 +0100" Modified="2022-02-10 15:14:52 +0100">
+                            <Title>credits</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>507,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="4F8FE227-AFDE-4409-8A18-54B5F1C9FA58" Type="Image" Created="2022-02-10 15:13:59 +0100" Modified="2022-02-10 15:13:59 +0100">
+                            <Title>map-takster</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>png</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                        </BinderItem>
+                        <BinderItem UUID="A1EDC6AC-6E57-4345-8401-B06C235C8DF0" Type="Image" Created="2022-02-10 15:14:20 +0100" Modified="2022-02-10 15:14:20 +0100">
+                            <Title>Taktser</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpeg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                        </BinderItem>
+                        <BinderItem UUID="DB06B8DE-B0E3-4088-BD0F-B8EBCADF3C34" Type="Image" Created="2022-02-10 15:09:07 +0100" Modified="2022-02-10 15:09:07 +0100">
+                            <Title>Karmapa4</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpeg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="EA8577E1-7CFB-4BDF-B881-A3E2C10A04B7" Type="Image" Created="2022-02-10 15:10:38 +0100" Modified="2022-02-10 15:10:38 +0100">
+                            <Title>Xiazong_kl</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpeg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="11819E1F-2C80-49E9-A578-EC14CFADAA23" Type="Folder" Created="2021-08-31 14:03:16 +0200" Modified="2021-08-31 14:04:19 +0200">
+                    <Title>27 Tashi Paljor</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="E205DA4D-960F-4429-A31A-DCF23DA3A7CC" Type="Text" Created="2021-08-31 14:04:27 +0200" Modified="2021-08-31 14:13:36 +0200">
+                            <Title>Tashi Paljor</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>2909,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="FA650D5B-136F-4091-8641-BDF0F22DA9D1" Type="Image" Created="2021-08-31 14:08:41 +0200" Modified="2021-08-31 14:08:41 +0200">
+                            <Title>Tashi Paljor</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>jpg</FileExtension>
+                                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                            </MetaData>
+                            <MediaSettings>
+                                <ImageScaleFactor>1.0</ImageScaleFactor>
+                                <ImageRotation>None</ImageRotation>
+                                <ImageScalesProportionally>No</ImageScalesProportionally>
+                            </MediaSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="430C3C13-1A89-47FD-A233-5F1F5045B74A" Type="Folder" Created="2021-09-01 13:31:19 +0200" Modified="2021-09-01 13:31:33 +0200">
+                    <Title>Vajradhara</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="898A1CC5-E214-4B41-83BD-A820C06EC8CC" Type="Text" Created="2021-09-01 13:31:40 +0200" Modified="2021-09-01 13:34:23 +0200">
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>1074,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem UUID="0DD8E54D-97B7-4A0A-9602-54216B962FE0" Type="TrashFolder" Created="2021-08-30 19:30:24 +0200" Modified="2021-08-30 19:30:24 +0200">
+            <Title>Papierkorb</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem UUID="42131FE3-AEE9-424C-A05A-80312DF8B567" Type="Image" Created="2021-08-30 19:31:55 +0200" Modified="2021-08-30 19:34:18 +0200">
+                    <Title>File Karmapa3.jpg</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>jpg</FileExtension>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem UUID="8D45907B-D08D-4F7A-BD98-79451ADAF0ED" Type="Image" Created="2021-08-31 14:06:47 +0200" Modified="2021-08-31 14:07:24 +0200">
+                    <Title>Tashi Paljor.jpg</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>jpg</FileExtension>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem UUID="7B2ADE24-7B63-4333-B34B-C80336853418" Type="Image" Created="2022-02-21 16:11:03 +0100" Modified="2022-02-21 16:11:03 +0100">
+                    <Title>Vajradhara</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>jpg</FileExtension>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem UUID="AA12C20B-84C3-4F9B-89B5-9979A19FDE3B" Type="Image" Created="2022-02-21 16:02:28 +0100" Modified="2022-02-21 16:02:28 +0100">
+                    <Title>samanthabadra</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>jpg</FileExtension>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem UUID="FD53285A-34D8-4380-90E8-0B0ECFC6D261" Type="Text" Created="2021-08-30 19:38:38 +0200" Modified="2021-08-30 19:43:42 +0200">
+                    <Title>Dolpopa-1</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>1998,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem UUID="0991FD7C-34A8-4919-B992-B2CB5D4A9F08" Type="Text" Created="2021-09-06 16:01:06 +0200" Modified="2021-09-06 16:02:17 +0200">
+            <Title>Ressources</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>504,0</TextSelection>
+            </TextSettings>
+        </BinderItem>
+        <BinderItem UUID="F11A73D0-DDBF-4931-9B19-215CEC6B3504" Type="Image" Created="2022-02-06 15:03:09 +0100" Modified="2022-02-06 15:03:09 +0100">
+            <Title>refugee</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+                <FileExtension>jpeg</FileExtension>
+                <ShowSynopsisImage>Yes</ShowSynopsisImage>
+            </MetaData>
+            <MediaSettings>
+                <ImageScaleFactor>1.0</ImageScaleFactor>
+                <ImageRotation>None</ImageRotation>
+                <ImageScalesProportionally>No</ImageScalesProportionally>
+            </MediaSettings>
+        </BinderItem>
+        <BinderItem UUID="98C48D9A-A329-4386-A6A9-55F9BF7F8286" Type="Folder" Created="2021-09-06 16:07:03 +0200" Modified="2021-09-06 16:07:08 +0200">
+            <Title>code</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>0,0</TextSelection>
+            </TextSettings>
+            <Children>
+                <BinderItem UUID="575820EA-367C-4EDA-AE5F-4D954D87E7C9" Type="Text" Created="2021-09-06 16:07:10 +0200" Modified="2021-09-06 16:12:25 +0200">
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>281,62</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem UUID="75E6FC22-CC82-466E-B24C-F95838E48186" Type="Text" Created="2022-02-06 15:28:32 +0100" Modified="2022-02-06 15:32:15 +0100">
+            <Title>Bestandteile Modal</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>39,0</TextSelection>
+            </TextSettings>
+        </BinderItem>
+    </Binder>
+    <Collections>
+        <Collection Type="Binder" ID="D860F7B0-4BF9-4FAE-AF66-EEC25F7E69D3" Color="0.112547 0.112547 0.112547">
+            <Title>Mappe</Title>
+        </Collection>
+        <Collection Type="RecentSearch" ID="4F925E46-BD22-4FF7-8440-4C675450418F" Color="0.190667 0.172702 0.216529">
+            <Title>Suchergebnisse</Title>
+        </Collection>
+    </Collections>
+    <SectionTypes>
+        <TypeDefinitions>
+            <Type ID="92DB09D2-FE1E-4EDF-97A3-53ECF3D3716E">Kopfzeile</Type>
+            <Type ID="E6DA182F-2611-4EB7-BF69-795E1C2930F6">Unterüberschrift</Type>
+            <Type ID="5C5C3F55-42EC-4426-9BE3-14D72F1147D6">Abschnitt</Type>
+        </TypeDefinitions>
+        <LevelTypes>
+            <Folders>
+                <Type>92DB09D2-FE1E-4EDF-97A3-53ECF3D3716E</Type>
+            </Folders>
+            <Containers>
+                <Type>5C5C3F55-42EC-4426-9BE3-14D72F1147D6</Type>
+            </Containers>
+            <Files>
+                <Type>5C5C3F55-42EC-4426-9BE3-14D72F1147D6</Type>
+            </Files>
+        </LevelTypes>
+    </SectionTypes>
+    <LabelSettings>
+        <Title>Etikett</Title>
+        <DefaultLabelID>-1</DefaultLabelID>
+        <Labels>
+            <Label ID="-1">Kein Etikett</Label>
+            <Label ID="0" Color="0.993495 0.701207 0.732587">Rot</Label>
+            <Label ID="1" Color="0.995418 0.790946 0.652385">Orange</Label>
+            <Label ID="2" Color="0.997722 0.89273 0.652569">Gelb</Label>
+            <Label ID="3" Color="0.715855 0.948712 0.697692">Grün</Label>
+            <Label ID="4" Color="0.702319 0.888276 0.974252">Blau</Label>
+            <Label ID="5" Color="0.957566 0.766747 0.999616">Lila</Label>
+        </Labels>
+    </LabelSettings>
+    <StatusSettings>
+        <Title>Status</Title>
+        <DefaultStatusID>-1</DefaultStatusID>
+        <StatusItems>
+            <Status ID="-1">Kein Status</Status>
+            <Status ID="0">To-Do</Status>
+            <Status ID="1">In Arbeit</Status>
+            <Status ID="2">Erstentwurf</Status>
+            <Status ID="3">Überarbeiteter Entwurf</Status>
+            <Status ID="4">Letzter Entwurf</Status>
+            <Status ID="5">Fertig</Status>
+        </StatusItems>
+    </StatusSettings>
+    <ProjectTargets Notify="No">
+        <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2021-08-30 19:30:22 +0200" IgnoreDeadline="Yes">0</DraftTarget>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2022-03-03 00:00:00 +0100" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
+        <PreviousSession Words="0" Characters="0" Date="2022-03-02 16:10:09 +0100"/>
+    </ProjectTargets>
+    <RecentWritingHistory Date="2022-03-02 00:00:00 +0100">
+        <DraftWordCount>0</DraftWordCount>
+        <DraftCharCount>0</DraftCharCount>
+        <OtherWordCount>327</OtherWordCount>
+        <OtherCharCount>2191</OtherCharCount>
+    </RecentWritingHistory>
+    <PrintSettings PaperSize="595.275546,841.889771" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"/>
+</ScrivenerProject>
