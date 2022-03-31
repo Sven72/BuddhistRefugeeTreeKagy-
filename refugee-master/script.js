@@ -58,12 +58,12 @@ renderModal = (clickedObject) => {
 
   // TODO: innerHTML in textContent ändern
   modalPlacement.style.top = coordY + "px";
-  objectName.innerHTML = clickedObject.firstName;
+  // objectName.innerHTML = clickedObject.firstName;
   objectAka.innerHTML = clickedObject.aka;
-  objectBirth.innerHTML = clickedObject.birth;
-  objectDeath.innerHTML = clickedObject.death;
+  // objectBirth.innerHTML = clickedObject.birth;
+  // objectDeath.innerHTML = clickedObject.death;
   objectLineage.innerHTML = clickedObject.lineage;
-  objectBio.innerHTML = clickedObject.bio;
+  // objectBio.innerHTML = clickedObject.bio;
   objectPray.innerHTML = clickedObject.prayer;
   objectMantra.innerHTML = clickedObject.mantra;
   objectWork.innerHTML = clickedObject.work;
@@ -80,22 +80,12 @@ renderModal = (clickedObject) => {
   } else {
     objectAge.innerText = lifeSpan + " years";
   }
-
-  // Clickpath for clicked element
-  let imgPath = clickedObject.img;
-
-  document.getElementById("objectImg").src = imgPath;
 };
 
 // ########## Hier alle Funktionen ############
 
-function findContemporary() {}
-
-// ==== Close modal & modalContemp depending on click target
-
 const allContemps = [];
 areaClickHandler = (event) => {
-  console.log("ji");
   event.preventDefault();
   allContemps.length = 0;
   const area = event.target;
@@ -138,7 +128,14 @@ areaClickHandler = (event) => {
 
   objectName.innerHTML = clickedObject.firstName;
 
-  // renderModal(clickedObject);
+  // Clickpath for clicked element
+  let imgPath = clickedObject.img;
+
+  document.getElementById("objectImg").src = imgPath;
+
+  objectBirth.innerHTML = clickedObject.birth;
+  objectDeath.innerHTML = clickedObject.death;
+  objectBio.innerHTML = clickedObject.bio;
 };
 
 pageClickHandler = (event) => {

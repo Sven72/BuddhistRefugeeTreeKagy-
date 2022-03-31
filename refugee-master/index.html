@@ -34,11 +34,14 @@ Embedding YouTube videos in modals requires additional JavaScript not in Bootstr
     <div class="modal" id="modal">
       <div class="modal-dialog modal-l">
         <div class="modal-content">
-          <div class="modal-header">
-            <h3 id="objectName">Modal Header</h3>
-            <h2 class="modal-title" id="objectName"></h2>
-            <button type="button" class="close" data-dismiss="modal">×</button>
-          </div>
+          <h2 id="objectName"></h2>
+
+          <!-- Muss hier noch ein anderer Container hin? -->
+          <p>
+            <span id="objectBirth"></span>
+            -
+            <span id="objectDeath"></span>
+          </p>
 
           <ul class="nav nav-tabs">
             <li><a href="#home" data-toggle="tab">Home</a></li>
@@ -48,8 +51,16 @@ Embedding YouTube videos in modals requires additional JavaScript not in Bootstr
           </ul>
 
           <div class="tab-content">
-            <div class="tab-pane active" id="home">...</div>
-            <div class="tab-pane" id="profile"><h2>Profile</h2></div>
+            <div class="tab-pane active" id="home">
+              <div class="row">
+                <div class="col">
+                  <img class="img-fluid" id="objectImg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="profile">
+              <p id="objectBio"></p>
+            </div>
             <div class="tab-pane" id="messages"><h2>Messages</h2></div>
             <div class="tab-pane" id="settings"><h2>Settings</h2></div>
           </div>
