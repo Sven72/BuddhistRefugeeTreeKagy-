@@ -2,10 +2,6 @@
 
 let refugeeMap = document.getElementById("refugee-map");
 
-// $(function () {
-//   $("#myTab a:last").tab("show");
-// });
-
 // THE LINEAGE MASTER SEARCH MODULE
 // Initiate array to collect all names of merit objects in alphabetical order. To select them via VALUE of "searchLineageMaster"
 let marker = document.getElementById("marker");
@@ -99,6 +95,7 @@ function findContemporary() {}
 
 const allContemps = [];
 areaClickHandler = (event) => {
+  console.log("ji");
   event.preventDefault();
   allContemps.length = 0;
   const area = event.target;
@@ -123,7 +120,8 @@ areaClickHandler = (event) => {
           allContemps.push(meritObject.firstName);
         }
       });
-      contemp.innerHTML = `<p>${allContemps}</p>`;
+
+      // contemp.innerHTML = `<p>${allContemps}</p>`;
     }
   });
   // This part retrieves the coords data from HTML area
@@ -137,7 +135,10 @@ areaClickHandler = (event) => {
   clickedObject.coords = elementCoords;
 
   // Calling renderModal function where specific information is dynamically put into modal and modal gets rendered in the DOM.
-  renderModal(clickedObject);
+
+  objectName.innerHTML = clickedObject.firstName;
+
+  // renderModal(clickedObject);
 };
 
 pageClickHandler = (event) => {
