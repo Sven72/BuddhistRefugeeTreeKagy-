@@ -2,20 +2,31 @@
 
 let refugeeMap = document.getElementById("refugee-map");
 
+// TAB TEST
+
+$("#myTab a").click(function (e) {
+  e.preventDefault();
+  $(this).tab("show");
+});
+
+$('#myTab a[href="#profile"]').tab("show");
+// $('#myTab a[href="#contact"]').tab("show");
+
+// TAB ENDE
 // THE LINEAGE MASTER SEARCH MODULE
 // Initiate array to collect all names of merit objects in alphabetical order. To select them via VALUE of "searchLineageMaster"
 let marker = document.getElementById("marker");
-let alphabeticalMaster = [];
+let lineageMasterAlphabeticalOrder = [];
 
-meritObjects.forEach((element) => {
-  alphabeticalMaster.push(element.firstName);
-  alphabeticalMaster = alphabeticalMaster.sort();
+meritObjects.forEach((object) => {
+  lineageMasterAlphabeticalOrder.push(object.firstName);
+  lineageMasterAlphabeticalOrder = lineageMasterAlphabeticalOrder.sort();
 });
 
 // Attach Names to select button
 let lineagMasterSearch = document.getElementById("searchLineageMaster");
 
-alphabeticalMaster.forEach((e, i) => {
+lineageMasterAlphabeticalOrder.forEach((e, i) => {
   let options = new Option(e, i);
   lineagMasterSearch.add(options, undefined);
 });
@@ -27,7 +38,6 @@ let objectBirth = document.getElementById("objectBirth");
 let objectDeath = document.getElementById("objectDeath");
 let objectLineage = document.getElementById("objectLineage");
 let objectBio = document.getElementById("objectBio");
-let modalElement = document.getElementById("modalElement");
 let objectAge = document.getElementById("objectAge");
 let objectPray = document.getElementById("objectPray");
 let objectMantra = document.getElementById("objectMantra");
@@ -38,6 +48,7 @@ let objectTeacher = document.getElementById("objectTeacher");
 
 // Convert object into array. Really necessary to loop through?
 let entries = Object.entries(meritObjects);
+console.log(entries);
 
 // Function which dynamically put information from element clicked on and renders it on DOM.
 
@@ -87,37 +98,39 @@ renderModal = (clickedObject) => {
   document.getElementById("objectImg").src = imgPath;
 };
 
+// ########## Hier alle Funktionen ############
+
+function findContemporary() {}
+
 // ==== Close modal & modalContemp depending on click target
 
+const allContemps = [];
 areaClickHandler = (event) => {
   event.preventDefault();
+  allContemps.length = 0;
   const area = event.target;
   const chosenObject = area.title; //The name of element clicked on
 
+  // findContemporary(chosenObject);
   // TODO: Hier per filter loopen und nach Zeitgenossen suchen
   meritObjects.forEach((entry) => {
     const contemp = document.querySelector(".custom-title");
-    const allContemps = [];
+
     if (entry.firstName == chosenObject) {
-      console.log(entry.firstName);
-      // console.log(entry.birth);
       meritObjects.filter((meritObject) => {
         if (
           entry.birth <= meritObject.birth &&
           entry.death > meritObject.birth
         ) {
-          allContemps.push(meritObject.firstName, meritObject.birth);
+          allContemps.push(meritObject.firstName);
         } else if (
           entry.birth > meritObject.birth &&
           entry.death < meritObject.death
         ) {
-          allContemps.push(meritObject.firstName, meritObject.birth);
+          allContemps.push(meritObject.firstName);
         }
       });
-      allContemps.forEach((theContemp) => {
-        contemp.insertAdjacentHTML("beforeend", `<li>${theContemp}</li>`);
-      });
-      // contemp.textContent = allContemps;
+      contemp.innerHTML = `<p>${allContemps}</p>`;
     }
   });
   // This part retrieves the coords data from HTML area
