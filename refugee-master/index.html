@@ -1,261 +1,890 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- TODO: Modal with Tabs: https://bbbootstrap.com/snippets/modal-multiple-tabs-89860645 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <title>Refugee Tree</title>
+  </head>
 
-<!-- TODO: Modal with Tabs: https://bbbootstrap.com/snippets/modal-multiple-tabs-89860645 -->
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="./style.css" /> -->
-  <title>Refugee Tree</title>
-</head>
+  <body>
+    <!-- https://getbootstrap.com/docs/4.3/components/modal/ -->
 
-<body>
-<!-- https://getbootstrap.com/docs/4.3/components/modal/ -->
-
-<!-- Using the grid
+    <!-- Using the grid
 
 Utilize the Bootstrap grid system within a modal by nesting .container-fluid within the .modal-body. Then, use the normal grid system classes as you would anywhere else. -->
 
-<!-- Embedding YouTube videos
+    <!-- Embedding YouTube videos
 
 Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. See this helpful Stack Overflow post for more information. -->
 
-<!-- TODO: Devtools: Check contemporary function -->
+    <div class="modal hide" id="modal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
 
-  <div class="modal fade" id="modal">
-    <!-- Set dimension of modal -->
-    <div class="modal-dialog modal-l">
-
-      <!-- TAB TEST -->
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-  </li>
-
-  <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-  </li>
-</ul>
-
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-</div>
-<!-- TAB TEST ENDE -->
-
-
-
-      <!-- .modal-body in contrast to modal-content makes bg transparent -->
-      <div class="modal-content">
-        <div class="container-fluid">
-        <div class="modal-header">
-          <h2 class="modal-title" id="objectName">
-          </h2>
-          <p id="objectLifetime">
-            <span id="objectBirth"></span> - <span id="objectDeath"></span><br>
-            <span id="objectAge"></span>
-            <!-- ########### Hier sind jetzt die Zeitgenossen integriert #####  -->
-            <ul class="custom-title"></ul>
-          </p>
-        </div>
-        <div class="row">
-            <div class="col">
-              <p><span id="objectAka"></span></p>
-            </div>
-        </div>
-        <!-- TODO: Dynamically add alt text -->
-        <div class="row">
-          <div class="col">
-            <img class="img-fluid" id="objectImg" alt="" />
-          </div>
-          <div class="col">
-            <p id="objectBio"></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <p id="objectPray"></p>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="col"></div>
-          <!-- <div class="col"></div> -->
-          <div class="col"> 
-          </div>
-        </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <h1>Our Living Tradition</h1>
-
-
-
-  <label for="searchLineageMaster">Search Master:</label>
-  <select name="searchLineageMaster" id="searchLineageMaster">
-  </select>
-
- 
-  <div class="image-container">
-    <img src="./img/Bildschirmfoto 2020-05-10 um 12.20.18 Kopie.png" usemap="#refugee-map" />
-  </div>
-
-  <map  name="refugee-map" id="refugee-map">
-    <!-- Upper left section "Masters of other lineages" -->
-    <div></div>
-    <area class="open" target="" alt="Padmasambhava" title="Padmasambhava" href="" coords="176,74,30" shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Shantarakshita" title="Shantarakshita" href="" coords="116,119,31"
-      shape="circle" data-toggle="modal" data-target="#modal"/>
-    <area class="open" target="" alt="Padampa Sanjay" title="Padampa Sanjay" href="" coords="174,128,24"
-      shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="King Trisung Detsun" title="King Trisung Detsun" href="" coords="233,124,30"
-      shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Tsongkhapa" title="Tsongkhapa" href="" coords="89,179,30" shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Sachen Kunga Nyingpo" title="Sachen Kunga Nyingpo" href="" coords="141,174,26"
-      shape="circle"data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Dolpopa" title="Dolpopa" href="" coords="207,181,30" shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Longchenpa" title="Longchenpa" href="" coords="263,176,24" shape="circle"data-toggle="modal" data-target="#modal"  />
-
-    <!-- The Ydams  -->
-    <area class="open" target="" alt="Samanthabadra" title="Samanthabadra" href="" coords="346,99,35" shape="circle" data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Prajnaparamita" title="Prajnaparamita" href="" coords="481,125,42"
-      shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Vajrasattva" title="Vajrasattva" href="" coords="628,95,33" shape="circle" data-toggle="modal" data-target="#modal"  />
-
-    <!-- The lineage Masters -->
-    <area class="open" target="" alt="Tilopa" title="Tilopa" href="" coords="342,180,25" shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Naropa" title="Naropa" href="" coords="644,175,28" shape="circle" data-toggle="modal" data-target="#modal" />
-
-    <area class="open" target="" alt="Vajradhara" title="Vajradhara" href="" coords="482,216,39" shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Saraha" title="Saraha" href="" coords="358,298,28" shape="circle" data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Ratnamati" title="Ratnamati" href="" coords="420,292,32" shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Nagarjuna" title="Nagarjuna" href="" coords="479,275,26" shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Shawaripa" title="Shawaripa" href="" coords="536,284,32" shape="circle" data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Maitripa" title="Maitripa" href="" coords="593,302,29" shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Marpa" title="Marpa" href="" coords="479,337,35" shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Khacho Wangpo 2nd Sharmapa" title="Khacho Wangpo 2nd Sharmapa" href=""
-      coords="244,350,36" shape="circle" data-toggle="modal" data-target="#modal" />
-      <area class="open" target="" alt="Tashi Paljor" title="Tashi Paljor" href=""
-      coords="302,356,28" shape="circle" />
-      <area class="open" target="" alt="Pomdrakpa" title="Pomdrakpa" href=""
-      coords="356,365,28" shape="circle" /><area class="open" target="" alt="Milarepa" title="Milarepa" href=""
-      coords="414,358,28" shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Gampopa" title="Gampopa" href="" coords="538,358,32" shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Dezhin Shekpa" title="Dezhin Shekpa" href="" coords="600,358,29" shape="circle" />
-    <area class="open" target="" alt="Drogon Rechen" title="Drogon Rechen" href="" coords="659,357,29" shape="circle" data-toggle="modal" data-target="#modal" />
-    <area class="open" target="" alt="Urgyenpa Rinchenpal" title="Urgyenpa Rinchenpal" href="" coords="719,347,30"
-      shape="circle" data-toggle="modal" data-target="#modal"  />
-    <area target="" alt="Karma Pakshi" title="Karma Pakshi" href="" coords="402,428,35" shape="circle" data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Rolpay Dorje" title="Rolpay Dorje" href="" coords="328,419,30" shape="circle" data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Jampal Zangpo" title="Jampal Zangpo" href="" coords="267,416,27" shape="circle" data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Paljor Dondrup" title="Paljor Dondrup" href="" coords="208,416,29" shape="circle" data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Yeshe Dorje" title="Yeshe Dorje" href="" coords="773,482,34" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Konchok Yenlak" title="Konchok Yenlak" href="" coords="716,476,28" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Mikyo Dorje" title="Mikyo Dorje" href="" coords="657,479,27" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Chokyi Dondrup" title="Chokyi Dondrup" href="" coords="595,477,29" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Thongwa Donden" title="Thongwa Donden" href="" coords="353,469,25" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Choying Dorje" title="Choying Dorje" href="" coords="297,481,33" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Yeshe Nyingpo" title="Yeshe Nyingpo" href="" coords="239,478,32" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Dudul Dorje" title="Dudul Dorje" href="" coords="170,478,36" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Jangchup Dorje" title="Jangchup Dorje" href="" coords="614,532,30" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Wangchuk Dorje" title="Wangchuk Dorje" href="" coords="676,529,30" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Chokyi Wangchuk" title="Chokyi Wangchuk" href="" coords="738,530,33" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Chokyi Jumgnay" title="Chokyi Jumgnay" href="" coords="344,528,26" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Tekchok Dorje" title="Tekchok Dorje" href="" coords="279,530,29" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Mipham Chodrup Gyamtso" title="Mipham Chodrup Gyamtso" href="" coords="208,535,34"
-      shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Khyentse Ozer" title="Khyentse Ozer" href="" coords="714,591,29" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Pema Nynje Wangpo" title="Pema Nynje Wangpo" href="" coords="654,595,32" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Pema Wangchuk Gyalpo" title="Pema Wangchuk Gyalpo" href="" coords="593,595,33" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Rangjung Rigpay Dorje" title="Rangjung Rigpay Dorje" href="" coords="360,596,28"
-      shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Khachab Dorje" title="Khachab Dorje" href="" coords="297,596,30" shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-    <area target="" alt="Yonten Gyamtso / Lodro Thaye" title="Yonten Gyamtso / Lodro Thaye" href="" coords="238,593,34"
-      shape="circle" data-toggle="modal" data-target="#modal" data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal" >
-
-    <!-- Masters of other lineages  -->
-    <area class="open" target="" alt="Atisha" title="Atisha" href="" coords="801,68,27" shape="circle"data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Jikten Sumgon" title="Jikten Sumgon" href="" coords="743,119,31" shape="circle"data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Ling Repa" title="Ling Repa" href="" coords="800,131,28" shape="circle"data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Phakmo Drugpa" title="Phakmo Drugpa" href="" coords="863,117,34" shape="circle"data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Jamyang Chentze" title="Jamyang Chentze" href="" coords="714,173,25"
-      shape="circle"data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Saltong Shogom" title="Saltong Shogom" href="" coords="771,180,26"
-      shape="circle"data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Trung Mase" title="Trung Mase" href="" coords="829,182,30" shape="circle"data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Khyungpo Natjor" title="Khyungpo Natjor" href="" coords="884,186,28"
-      shape="circle"data-toggle="modal" data-target="#modal"  data-toggle="modal" data-target="#modal"  />
-
-    <area class="open" target="" alt="Yungtompa" title="Yungtompa" href="" coords="744,406,29" shape="circle" data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Ratnabhadra" title="Ratnabhadra" href="" coords="686,417,33" shape="circle" data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Chodrak Gyamtso" title="Chodrak Gyamtso" href="" coords="628,417,31"
-      shape="circle" data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Rangjung Dorje" title="Rangjung Dorje" href="" coords="556,419,31"
-      shape="circle" data-toggle="modal" data-target="#modal"  />
-    <area class="open" target="" alt="Dusum Khyenpa" title="Dusum Khyenpa" href="" coords="479,405,31" shape="circle" data-toggle="modal" data-target="#modal"  />
-  </map>
-
-  <!-- ================ The Modal / Overlay ================== -->
-<!-- TODO: Diesen Code entfernen. Dann funktioniert aber das Bootstrap Modal nicht mehr. Warum? -->
-  <!-- <div class="modal-container" id="modal"> -->
-    <div class="modal-content">
-      <div class="objectLineageContainer">
-        <p id="objectLineage"></p>
-      </div>
-      <!-- <div class="modal-header"> -->
-      <!-- <img id="objectImg" alt="" /> -->
-      <div class="objectNameAge"> 
-        <h3 id="objectName"></h3>
-        <h2 id="objectAka"></h2>
-        <p id="objectLifetime"><span id="objectBirth"></span> - <span id="objectDeath"></span><br>
-          <span id="objectAge"></span>
-        </p>
+        <h3>Modal header</h3>
       </div>
 
-      <div class="objectTeacherDiscipleWork">
-        <p>Teacher/s: <span id="objectTeacher"></span></p>
-        <p>Disciple/s:<span id="objectDisciple">
-          </span> </p>
-        </n>
-        <p>Work: <span id="objectWork"></span> </p>
-        </n>
+      <ul class="nav nav-tabs">
+        <li><a href="#home" data-toggle="tab">Home</a></li>
+        <li><a href="#profile" data-toggle="tab">Profile</a></li>
+        <li><a href="#messages" data-toggle="tab">Messages</a></li>
+        <li><a href="#settings" data-toggle="tab">Settings</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="home">...</div>
+        <div class="tab-pane" id="profile"><h2>Profile</h2></div>
+        <div class="tab-pane" id="messages"><h2>Messages</h2></div>
+        <div class="tab-pane" id="settings"><h2>Settings</h2></div>
       </div>
 
-      <div class="objectQuotedMantraPredicted">
-        <p>Referred to in Lineage Prayer as: <span id="objectPray"></span></p>
-        <p>Mantra: <span id="objectMantra"></span>
-        </p>
-        <p>Placeholder Predicted as
-          <span id="objectTeachings"></span></p>
-        <p>Biography: <span id="objectBio"></span></p>
-
+      <div class="modal-body">
+        <p>One fine body…</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+        <a href="#" class="btn btn-primary">Save changes</a>
       </div>
     </div>
 
+    <h1>Our Living Tradition</h1>
 
-  </div>
+    <label for="searchLineageMaster">Search Master:</label>
+    <select name="searchLineageMaster" id="searchLineageMaster"></select>
 
+    <div class="image-container">
+      <img
+        src="./img/Bildschirmfoto 2020-05-10 um 12.20.18 Kopie.png"
+        usemap="#refugee-map"
+      />
+    </div>
 
+    <map name="refugee-map" id="refugee-map">
+      <!-- Upper left section "Masters of other lineages" -->
+      <div></div>
+      <area
+        class="open"
+        target=""
+        alt="Padmasambhava"
+        title="Padmasambhava"
+        href=""
+        coords="176,74,30"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Shantarakshita"
+        title="Shantarakshita"
+        href=""
+        coords="116,119,31"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Padampa Sanjay"
+        title="Padampa Sanjay"
+        href=""
+        coords="174,128,24"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="King Trisung Detsun"
+        title="King Trisung Detsun"
+        href=""
+        coords="233,124,30"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Tsongkhapa"
+        title="Tsongkhapa"
+        href=""
+        coords="89,179,30"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Sachen Kunga Nyingpo"
+        title="Sachen Kunga Nyingpo"
+        href=""
+        coords="141,174,26"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Dolpopa"
+        title="Dolpopa"
+        href=""
+        coords="207,181,30"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Longchenpa"
+        title="Longchenpa"
+        href=""
+        coords="263,176,24"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
 
-  <!--  -->
-  </div>
- <script src="./objects.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- 
-  <script src="./script.js"></script>
-</body>
+      <!-- The Ydams  -->
+      <area
+        class="open"
+        target=""
+        alt="Samanthabadra"
+        title="Samanthabadra"
+        href=""
+        coords="346,99,35"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Prajnaparamita"
+        title="Prajnaparamita"
+        href=""
+        coords="481,125,42"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Vajrasattva"
+        title="Vajrasattva"
+        href=""
+        coords="628,95,33"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
 
+      <!-- The lineage Masters -->
+      <area
+        class="open"
+        target=""
+        alt="Tilopa"
+        title="Tilopa"
+        href=""
+        coords="342,180,25"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Naropa"
+        title="Naropa"
+        href=""
+        coords="644,175,28"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+
+      <area
+        class="open"
+        target=""
+        alt="Vajradhara"
+        title="Vajradhara"
+        href=""
+        coords="482,216,39"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Saraha"
+        title="Saraha"
+        href=""
+        coords="358,298,28"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Ratnamati"
+        title="Ratnamati"
+        href=""
+        coords="420,292,32"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Nagarjuna"
+        title="Nagarjuna"
+        href=""
+        coords="479,275,26"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Shawaripa"
+        title="Shawaripa"
+        href=""
+        coords="536,284,32"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Maitripa"
+        title="Maitripa"
+        href=""
+        coords="593,302,29"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Marpa"
+        title="Marpa"
+        href=""
+        coords="479,337,35"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Khacho Wangpo 2nd Sharmapa"
+        title="Khacho Wangpo 2nd Sharmapa"
+        href=""
+        coords="244,350,36"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Tashi Paljor"
+        title="Tashi Paljor"
+        href=""
+        coords="302,356,28"
+        shape="circle"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Pomdrakpa"
+        title="Pomdrakpa"
+        href=""
+        coords="356,365,28"
+        shape="circle"
+      /><area
+        class="open"
+        target=""
+        alt="Milarepa"
+        title="Milarepa"
+        href=""
+        coords="414,358,28"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Gampopa"
+        title="Gampopa"
+        href=""
+        coords="538,358,32"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Dezhin Shekpa"
+        title="Dezhin Shekpa"
+        href=""
+        coords="600,358,29"
+        shape="circle"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Drogon Rechen"
+        title="Drogon Rechen"
+        href=""
+        coords="659,357,29"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Urgyenpa Rinchenpal"
+        title="Urgyenpa Rinchenpal"
+        href=""
+        coords="719,347,30"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Karma Pakshi"
+        title="Karma Pakshi"
+        href=""
+        coords="402,428,35"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Rolpay Dorje"
+        title="Rolpay Dorje"
+        href=""
+        coords="328,419,30"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Jampal Zangpo"
+        title="Jampal Zangpo"
+        href=""
+        coords="267,416,27"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Paljor Dondrup"
+        title="Paljor Dondrup"
+        href=""
+        coords="208,416,29"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Yeshe Dorje"
+        title="Yeshe Dorje"
+        href=""
+        coords="773,482,34"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Konchok Yenlak"
+        title="Konchok Yenlak"
+        href=""
+        coords="716,476,28"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Mikyo Dorje"
+        title="Mikyo Dorje"
+        href=""
+        coords="657,479,27"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Chokyi Dondrup"
+        title="Chokyi Dondrup"
+        href=""
+        coords="595,477,29"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Thongwa Donden"
+        title="Thongwa Donden"
+        href=""
+        coords="353,469,25"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Choying Dorje"
+        title="Choying Dorje"
+        href=""
+        coords="297,481,33"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Yeshe Nyingpo"
+        title="Yeshe Nyingpo"
+        href=""
+        coords="239,478,32"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Dudul Dorje"
+        title="Dudul Dorje"
+        href=""
+        coords="170,478,36"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Jangchup Dorje"
+        title="Jangchup Dorje"
+        href=""
+        coords="614,532,30"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Wangchuk Dorje"
+        title="Wangchuk Dorje"
+        href=""
+        coords="676,529,30"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Chokyi Wangchuk"
+        title="Chokyi Wangchuk"
+        href=""
+        coords="738,530,33"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Chokyi Jumgnay"
+        title="Chokyi Jumgnay"
+        href=""
+        coords="344,528,26"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Tekchok Dorje"
+        title="Tekchok Dorje"
+        href=""
+        coords="279,530,29"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Mipham Chodrup Gyamtso"
+        title="Mipham Chodrup Gyamtso"
+        href=""
+        coords="208,535,34"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Khyentse Ozer"
+        title="Khyentse Ozer"
+        href=""
+        coords="714,591,29"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Pema Nynje Wangpo"
+        title="Pema Nynje Wangpo"
+        href=""
+        coords="654,595,32"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Pema Wangchuk Gyalpo"
+        title="Pema Wangchuk Gyalpo"
+        href=""
+        coords="593,595,33"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Rangjung Rigpay Dorje"
+        title="Rangjung Rigpay Dorje"
+        href=""
+        coords="360,596,28"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Khachab Dorje"
+        title="Khachab Dorje"
+        href=""
+        coords="297,596,30"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        target=""
+        alt="Yonten Gyamtso / Lodro Thaye"
+        title="Yonten Gyamtso / Lodro Thaye"
+        href=""
+        coords="238,593,34"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+
+      <!-- Masters of other lineages  -->
+      <area
+        class="open"
+        target=""
+        alt="Atisha"
+        title="Atisha"
+        href=""
+        coords="801,68,27"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Jikten Sumgon"
+        title="Jikten Sumgon"
+        href=""
+        coords="743,119,31"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Ling Repa"
+        title="Ling Repa"
+        href=""
+        coords="800,131,28"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Phakmo Drugpa"
+        title="Phakmo Drugpa"
+        href=""
+        coords="863,117,34"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Jamyang Chentze"
+        title="Jamyang Chentze"
+        href=""
+        coords="714,173,25"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Saltong Shogom"
+        title="Saltong Shogom"
+        href=""
+        coords="771,180,26"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Trung Mase"
+        title="Trung Mase"
+        href=""
+        coords="829,182,30"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Khyungpo Natjor"
+        title="Khyungpo Natjor"
+        href=""
+        coords="884,186,28"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+
+      <area
+        class="open"
+        target=""
+        alt="Yungtompa"
+        title="Yungtompa"
+        href=""
+        coords="744,406,29"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Ratnabhadra"
+        title="Ratnabhadra"
+        href=""
+        coords="686,417,33"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Chodrak Gyamtso"
+        title="Chodrak Gyamtso"
+        href=""
+        coords="628,417,31"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Rangjung Dorje"
+        title="Rangjung Dorje"
+        href=""
+        coords="556,419,31"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+      <area
+        class="open"
+        target=""
+        alt="Dusum Khyenpa"
+        title="Dusum Khyenpa"
+        href=""
+        coords="479,405,31"
+        shape="circle"
+        data-toggle="modal"
+        data-target="#modal"
+      />
+    </map>
+
+    <!-- ================ The Modal / Overlay ================== -->
+
+    <script src="./objects.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
