@@ -9,6 +9,7 @@ $("#myTab a").click(function (e) {
   $(this).tab("show");
 });
 
+$('#myTab a[href="#home"]').tab("show");
 $('#myTab a[href="#profile"]').tab("show");
 // $('#myTab a[href="#contact"]').tab("show");
 
