@@ -2,9 +2,9 @@
 
 let refugeeMap = document.getElementById("refugee-map");
 
-$(function () {
-  $("#myTab a:last").tab("show");
-});
+// $(function () {
+//   $("#myTab a:last").tab("show");
+// });
 
 // THE LINEAGE MASTER SEARCH MODULE
 // Initiate array to collect all names of merit objects in alphabetical order. To select them via VALUE of "searchLineageMaster"
