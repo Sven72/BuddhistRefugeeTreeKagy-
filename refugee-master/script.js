@@ -55,15 +55,15 @@ renderModal = (clickedObject) => {
   // TODO: innerHTML in textContent ändern
   modalPlacement.style.top = coordY + "px";
   // objectName.innerHTML = clickedObject.firstName;
-  objectAka.innerHTML = clickedObject.aka;
+  // objectAka.innerHTML = clickedObject.aka;
   // objectBirth.innerHTML = clickedObject.birth;
   // objectDeath.innerHTML = clickedObject.death;
-  objectLineage.innerHTML = clickedObject.lineage;
+  // objectLineage.innerHTML = clickedObject.lineage;
   // objectBio.innerHTML = clickedObject.bio;
   objectPray.innerHTML = clickedObject.prayer;
   objectMantra.innerHTML = clickedObject.mantra;
   objectWork.innerHTML = clickedObject.work;
-  objectTeachings.innerHTML = clickedObject.teachings;
+
   objectDisciple.innerHTML = clickedObject.disciple;
   objectTeacher.innerHTML = clickedObject.teacher;
 };
@@ -113,6 +113,9 @@ function renderNewModal() {
   objectBirth.innerHTML = clickedObject.birth;
   objectDeath.innerHTML = clickedObject.death;
   objectBio.innerHTML = clickedObject.bio;
+  objectAka.innerHTML = clickedObject.aka;
+  objectTeachings.innerHTML = clickedObject.teachings;
+  objectLineage.innerHTML = clickedObject.lineage;
 }
 
 const allContemps = [];
