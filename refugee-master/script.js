@@ -49,10 +49,6 @@ renderModal = (clickedObject) => {
   const coordX = parseInt(objCoords[0]);
   const coordY = parseInt(objCoords[1]);
   const coordM = parseInt(objCoords[2]);
-  // Depending on where clicked object is situated place modal left or right of object for readability reasons
-  coordX > 500
-    ? (modalPlacement.style.left = coordX - 400 + "px")
-    : (modalPlacement.style.left = coordX + "px");
 
   // As in horizontals axis (above) place modal on y-axis depending on where clicked object is situated
 
@@ -70,7 +66,11 @@ renderModal = (clickedObject) => {
   objectTeachings.innerHTML = clickedObject.teachings;
   objectDisciple.innerHTML = clickedObject.disciple;
   objectTeacher.innerHTML = clickedObject.teacher;
+};
 
+// ########## Hier alle Funktionen ############
+
+function lifeSpan() {
   // Subroutine "Lifespan"
   let lifeSpan = parseInt(clickedObject.death) - parseInt(clickedObject.birth);
   let sorryMessage = "Sorry, no date available";
@@ -80,11 +80,43 @@ renderModal = (clickedObject) => {
   } else {
     objectAge.innerText = lifeSpan + " years";
   }
-};
+}
 
-// ########## Hier alle Funktionen ############
+function findContemporary() {
+  // TODO: Hier per filter loopen und nach Zeitgenossen suchen
+  // if (entry.firstName == chosenObject) {
+  //   meritObjects.filter((meritObject) => {
+  //     if (
+  //       entry.birth <= meritObject.birth &&
+  //       entry.death > meritObject.birth
+  //     ) {
+  //       allContemps.push(meritObject.firstName);
+  //     } else if (
+  //       entry.birth > meritObject.birth &&
+  //       entry.death < meritObject.death
+  //     ) {
+  //       allContemps.push(meritObject.firstName);
+  //     }
+  //   });
+  //   contemp.innerHTML = `<p>${allContemps}</p>`;
+  // }
+}
+
+function renderNewModal() {
+  objectName.innerHTML = clickedObject.firstName;
+
+  // Clickpath for clicked element
+  let imgPath = clickedObject.img;
+
+  document.getElementById("objectImg").src = imgPath;
+
+  objectBirth.innerHTML = clickedObject.birth;
+  objectDeath.innerHTML = clickedObject.death;
+  objectBio.innerHTML = clickedObject.bio;
+}
 
 const allContemps = [];
+
 areaClickHandler = (event) => {
   event.preventDefault();
   allContemps.length = 0;
@@ -92,27 +124,9 @@ areaClickHandler = (event) => {
   const chosenObject = area.title; //The name of element clicked on
 
   // findContemporary(chosenObject);
-  // TODO: Hier per filter loopen und nach Zeitgenossen suchen
+
   meritObjects.forEach((entry) => {
     const contemp = document.querySelector(".custom-title");
-
-    if (entry.firstName == chosenObject) {
-      meritObjects.filter((meritObject) => {
-        if (
-          entry.birth <= meritObject.birth &&
-          entry.death > meritObject.birth
-        ) {
-          allContemps.push(meritObject.firstName);
-        } else if (
-          entry.birth > meritObject.birth &&
-          entry.death < meritObject.death
-        ) {
-          allContemps.push(meritObject.firstName);
-        }
-      });
-
-      // contemp.innerHTML = `<p>${allContemps}</p>`;
-    }
   });
   // This part retrieves the coords data from HTML area
   const elementCoords = area.coords;
@@ -124,18 +138,7 @@ areaClickHandler = (event) => {
   // Add coords to Object (They are needed to place the modal near clicked object)
   clickedObject.coords = elementCoords;
 
-  // Calling renderModal function where specific information is dynamically put into modal and modal gets rendered in the DOM.
-
-  objectName.innerHTML = clickedObject.firstName;
-
-  // Clickpath for clicked element
-  let imgPath = clickedObject.img;
-
-  document.getElementById("objectImg").src = imgPath;
-
-  objectBirth.innerHTML = clickedObject.birth;
-  objectDeath.innerHTML = clickedObject.death;
-  objectBio.innerHTML = clickedObject.bio;
+  renderNewModal();
 };
 
 pageClickHandler = (event) => {
