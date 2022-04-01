@@ -1,3 +1,8 @@
+$("#myTab a").on("click", function (e) {
+  e.preventDefault();
+  $(this).tab("show");
+});
+
 // === Variables related to global
 
 let refugeeMap = document.getElementById("refugee-map");
@@ -54,12 +59,7 @@ renderModal = (clickedObject) => {
 
   // TODO: innerHTML in textContent ändern
   modalPlacement.style.top = coordY + "px";
-  // objectName.innerHTML = clickedObject.firstName;
-  // objectAka.innerHTML = clickedObject.aka;
-  // objectBirth.innerHTML = clickedObject.birth;
-  // objectDeath.innerHTML = clickedObject.death;
-  // objectLineage.innerHTML = clickedObject.lineage;
-  // objectBio.innerHTML = clickedObject.bio;
+
   objectPray.innerHTML = clickedObject.prayer;
   objectMantra.innerHTML = clickedObject.mantra;
   objectWork.innerHTML = clickedObject.work;
@@ -105,17 +105,15 @@ function findContemporary() {
 function renderNewModal() {
   objectName.innerHTML = clickedObject.firstName;
 
-  // Clickpath for clicked element
-  let imgPath = clickedObject.img;
-
-  document.getElementById("objectImg").src = imgPath;
-
   objectBirth.innerHTML = clickedObject.birth;
   objectDeath.innerHTML = clickedObject.death;
   objectBio.innerHTML = clickedObject.bio;
   objectAka.innerHTML = clickedObject.aka;
   objectTeachings.innerHTML = clickedObject.teachings;
   objectLineage.innerHTML = clickedObject.lineage;
+
+  let imgPath = clickedObject.img;
+  document.getElementById("objectImg").src = imgPath;
 }
 
 const allContemps = [];
