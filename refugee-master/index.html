@@ -31,55 +31,95 @@ Utilize the Bootstrap grid system within a modal by nesting .container-fluid wit
 
 Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. See this helpful Stack Overflow post for more information. -->
 
-    <div class="modal" id="modal">
+    <div
+      class="modal fade"
+      id="modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-l">
         <div class="modal-content">
-          <div class="container">
+          <div class="modal-header">
             <h2 id="objectName"></h2>
             <p id="objectAka"></p>
-
-            <!-- Muss hier noch ein anderer Container hin? -->
             <p>
               <span id="objectBirth"></span>
               -
               <span id="objectDeath"></span>
             </p>
+          </div>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                data-toggle="tab"
+                href="#home"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="tab"
+                href="#profile"
+                aria-controls="profile"
+                aria-selected="false"
+                >Biography</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="tab"
+                href="#teachings"
+                aria-controls="teachings"
+                aria-selected="false"
+                >Teachings</a
+              >
+            </li>
+          </ul>
 
-            <!-- TODO: Why does this have no impact -->
-            <ul class="nav nav-tabs nav-fill" id="myTab">
-              <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-              <li>
-                <a href="#profile" data-toggle="tab">Biography</a>
-              </li>
-              <li><a href="#teachings" data-toggle="tab">Teachings</a></li>
-              <li><a href="#settings" data-toggle="tab">Settings</a></li>
-            </ul>
-
-            <div class="tab-content">
-              <div class="tab-pane active" id="home">
-                <div class="row">
-                  <div class="col">
-                    <img class="img-fluid" id="objectImg" alt="" />
-                    <p id="objectLineage"></p>
-                  </div>
+          <div class="tab-content" id="tabContent">
+            <!-- fade show auskommentieren -->
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <div class="row">
+                <div class="col">
+                  <img class="img-fluid" id="objectImg" alt="" />
+                  <p id="objectLineage"></p>
                 </div>
               </div>
-              <div class="tab-pane" id="profile">
-                <p id="objectBio"></p>
-              </div>
-              <div class="tab-pane" id="teachings">
-                <h2>Teachings</h2>
-                <p id="objectTeachings"></p>
-              </div>
-              <div class="tab-pane" id="settings"><h2>Settings</h2></div>
             </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <p id="objectBio"></p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="teachings"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              <h2>Teachings</h2>
+              <p id="objectTeachings"></p>
+            </div>
+          </div>
 
-            <!-- <div class="modal-body">
-            <p>One fine body…</p>
-          </div> -->
-            <div class="modal-footer">
-              <a href="#" class="btn" data-dismiss="modal">Close</a>
-            </div>
+          <div class="modal-footer">
+            <a href="#" class="btn" data-dismiss="modal">Close</a>
           </div>
         </div>
       </div>
@@ -98,8 +138,6 @@ Embedding YouTube videos in modals requires additional JavaScript not in Bootstr
     </div>
 
     <map name="refugee-map" id="refugee-map">
-      <!-- Upper left section "Masters of other lineages" -->
-      <div></div>
       <area
         class="open"
         target=""

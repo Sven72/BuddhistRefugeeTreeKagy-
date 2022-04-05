@@ -1,8 +1,3 @@
-$("#myTab a").on("click", function (e) {
-  e.preventDefault();
-  $(this).tab("show");
-});
-
 // === Variables related to global
 
 let refugeeMap = document.getElementById("refugee-map");
@@ -80,6 +75,7 @@ function lifeSpan() {
   } else {
     objectAge.innerText = lifeSpan + " years";
   }
+  console.log("lifeSpan");
 }
 
 function findContemporary() {
@@ -114,6 +110,8 @@ function renderNewModal() {
 
   let imgPath = clickedObject.img;
   document.getElementById("objectImg").src = imgPath;
+
+  lifeSpan();
 }
 
 const allContemps = [];
