@@ -41,32 +41,9 @@ console.log(entries);
 
 // Function which dynamically put information from element clicked on and renders it on DOM.
 
-renderModal = (clickedObject) => {
-  modal.classList.add("show-modal");
-  // Place modal near clicked element
-  const modalPlacement = document.getElementById("modal");
-  let objCoords = clickedObject.coords.split(",");
-  const coordX = parseInt(objCoords[0]);
-  const coordY = parseInt(objCoords[1]);
-  const coordM = parseInt(objCoords[2]);
-
-  // As in horizontals axis (above) place modal on y-axis depending on where clicked object is situated
-
-  // TODO: innerHTML in textContent ändern
-  modalPlacement.style.top = coordY + "px";
-
-  objectPray.innerHTML = clickedObject.prayer;
-  objectMantra.innerHTML = clickedObject.mantra;
-  objectWork.innerHTML = clickedObject.work;
-
-  objectDisciple.innerHTML = clickedObject.disciple;
-  objectTeacher.innerHTML = clickedObject.teacher;
-};
-
-// ########## Hier alle Funktionen ############
+// ###### ALLE FUNKTIONEN  ##########
 
 function lifeSpan() {
-  // Subroutine "Lifespan"
   let lifeSpan = parseInt(clickedObject.death) - parseInt(clickedObject.birth);
   let sorryMessage = "Sorry, no date available";
 
@@ -77,6 +54,17 @@ function lifeSpan() {
   }
   console.log("lifeSpan");
 }
+
+renderModal = (clickedObject) => {
+  // TODO: innerHTML in textContent ändern
+
+  objectPray.innerHTML = clickedObject.prayer;
+  objectMantra.innerHTML = clickedObject.mantra;
+  objectWork.innerHTML = clickedObject.work;
+
+  objectDisciple.innerHTML = clickedObject.disciple;
+  objectTeacher.innerHTML = clickedObject.teacher;
+};
 
 function findContemporary() {
   // TODO: Hier per filter loopen und nach Zeitgenossen suchen
