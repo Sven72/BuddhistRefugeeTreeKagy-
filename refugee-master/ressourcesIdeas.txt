@@ -3,6 +3,13 @@
 - Tooltip mit Karte
 - Schriften
 
+
+
+Warum sind die Tabs nicht sichtbar?
+Warum wird die Lebenszeit nicht eingeblendet?
+Warum die Zeitgenossen nicht?
+
+
 SVG
 https://www.sitepoint.com/how-to-translate-from-dom-to-svg-coordinates-and-back-again/
 

@@ -34,44 +34,15 @@ let objectWork = document.getElementById("objectWork");
 let objectTeachings = document.getElementById("objectTeachings");
 let objectDisciple = document.getElementById("objectDisciple");
 let objectTeacher = document.getElementById("objectTeacher");
+let objectContemp = document.getElementById("contemp");
 
 // Convert object into array. Really necessary to loop through?
 let entries = Object.entries(meritObjects);
 console.log(entries);
 
-// Function which dynamically put information from element clicked on and renders it on DOM.
+// ###### ALLE FUNKTIONEN  ##########
 
-renderModal = (clickedObject) => {
-  modal.classList.add("show-modal");
-  // Place modal near clicked element
-  const modalPlacement = document.getElementById("modal");
-  let objCoords = clickedObject.coords.split(",");
-  const coordX = parseInt(objCoords[0]);
-  const coordY = parseInt(objCoords[1]);
-  const coordM = parseInt(objCoords[2]);
-  // Depending on where clicked object is situated place modal left or right of object for readability reasons
-  coordX > 500
-    ? (modalPlacement.style.left = coordX - 400 + "px")
-    : (modalPlacement.style.left = coordX + "px");
-
-  // As in horizontals axis (above) place modal on y-axis depending on where clicked object is situated
-
-  // TODO: innerHTML in textContent ändern
-  modalPlacement.style.top = coordY + "px";
-  objectName.innerHTML = clickedObject.firstName;
-  objectAka.innerHTML = clickedObject.aka;
-  objectBirth.innerHTML = clickedObject.birth;
-  objectDeath.innerHTML = clickedObject.death;
-  objectLineage.innerHTML = clickedObject.lineage;
-  objectBio.innerHTML = clickedObject.bio;
-  objectPray.innerHTML = clickedObject.prayer;
-  objectMantra.innerHTML = clickedObject.mantra;
-  objectWork.innerHTML = clickedObject.work;
-  objectTeachings.innerHTML = clickedObject.teachings;
-  objectDisciple.innerHTML = clickedObject.disciple;
-  objectTeacher.innerHTML = clickedObject.teacher;
-
-  // Subroutine "Lifespan"
+function lifeSpan() {
   let lifeSpan = parseInt(clickedObject.death) - parseInt(clickedObject.birth);
   let sorryMessage = "Sorry, no date available";
 
@@ -80,47 +51,69 @@ renderModal = (clickedObject) => {
   } else {
     objectAge.innerText = lifeSpan + " years";
   }
+}
 
-  // Clickpath for clicked element
-  let imgPath = clickedObject.img;
+renderModal = (clickedObject) => {
+  // TODO: innerHTML in textContent ändern
 
-  document.getElementById("objectImg").src = imgPath;
+  objectPray.innerHTML = clickedObject.prayer;
+  objectMantra.innerHTML = clickedObject.mantra;
+  objectWork.innerHTML = clickedObject.work;
+
+  objectDisciple.innerHTML = clickedObject.disciple;
+  objectTeacher.innerHTML = clickedObject.teacher;
 };
 
-// ########## Hier alle Funktionen ############
+function findContemporary(clickedObject) {
+  let allContemps = [];
+  meritObjects.forEach((meritObject) => {
+    if (
+      clickedObject.birth <= meritObject.birth &&
+      clickedObject.death > meritObject.birth
+    ) {
+      allContemps.push(meritObject.firstName);
+    } else if (
+      clickedObject.birth > meritObject.birth &&
+      clickedObject.death < meritObject.death
+    ) {
+      allContemps.push(meritObject.firstName);
+    }
 
-function findContemporary() {}
+    // Without this condiction, the name of the clicked person would be listed in the array of contemporaries.
+    if (allContemps.includes(clickedObject.firstName)) {
+      allContemps.splice(allContemps.indexOf(clickedObject.firstName), 1);
+    }
+  });
+  objectContemp.innerHTML = `<strong>${allContemps}</strong>`;
+}
 
-// ==== Close modal & modalContemp depending on click target
+function renderNewModal() {
+  objectName.innerHTML = clickedObject.firstName;
+
+  objectBirth.innerHTML = clickedObject.birth;
+  objectDeath.innerHTML = clickedObject.death;
+  objectBio.innerHTML = clickedObject.bio;
+  objectAka.innerHTML = clickedObject.aka;
+  objectTeachings.innerHTML = clickedObject.teachings;
+  objectLineage.innerHTML = clickedObject.lineage;
+
+  let imgPath = clickedObject.img;
+  document.getElementById("objectImg").src = imgPath;
+
+  findContemporary(clickedObject);
+  lifeSpan();
+}
 
 const allContemps = [];
+
 areaClickHandler = (event) => {
   event.preventDefault();
   allContemps.length = 0;
   const area = event.target;
   const chosenObject = area.title; //The name of element clicked on
 
-  // findContemporary(chosenObject);
-  // TODO: Hier per filter loopen und nach Zeitgenossen suchen
   meritObjects.forEach((entry) => {
     const contemp = document.querySelector(".custom-title");
-
-    if (entry.firstName == chosenObject) {
-      meritObjects.filter((meritObject) => {
-        if (
-          entry.birth <= meritObject.birth &&
-          entry.death > meritObject.birth
-        ) {
-          allContemps.push(meritObject.firstName);
-        } else if (
-          entry.birth > meritObject.birth &&
-          entry.death < meritObject.death
-        ) {
-          allContemps.push(meritObject.firstName);
-        }
-      });
-      contemp.innerHTML = `<p>${allContemps}</p>`;
-    }
   });
   // This part retrieves the coords data from HTML area
   const elementCoords = area.coords;
@@ -132,8 +125,7 @@ areaClickHandler = (event) => {
   // Add coords to Object (They are needed to place the modal near clicked object)
   clickedObject.coords = elementCoords;
 
-  // Calling renderModal function where specific information is dynamically put into modal and modal gets rendered in the DOM.
-  renderModal(clickedObject);
+  renderNewModal();
 };
 
 pageClickHandler = (event) => {
