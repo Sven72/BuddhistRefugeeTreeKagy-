@@ -34,12 +34,11 @@ let objectWork = document.getElementById("objectWork");
 let objectTeachings = document.getElementById("objectTeachings");
 let objectDisciple = document.getElementById("objectDisciple");
 let objectTeacher = document.getElementById("objectTeacher");
+let objectContemp = document.getElementById("contemp");
 
 // Convert object into array. Really necessary to loop through?
 let entries = Object.entries(meritObjects);
 console.log(entries);
-
-// Function which dynamically put information from element clicked on and renders it on DOM.
 
 // ###### ALLE FUNKTIONEN  ##########
 
@@ -52,7 +51,6 @@ function lifeSpan() {
   } else {
     objectAge.innerText = lifeSpan + " years";
   }
-  console.log("lifeSpan");
 }
 
 renderModal = (clickedObject) => {
@@ -66,24 +64,27 @@ renderModal = (clickedObject) => {
   objectTeacher.innerHTML = clickedObject.teacher;
 };
 
-function findContemporary() {
-  // TODO: Hier per filter loopen und nach Zeitgenossen suchen
-  // if (entry.firstName == chosenObject) {
-  //   meritObjects.filter((meritObject) => {
-  //     if (
-  //       entry.birth <= meritObject.birth &&
-  //       entry.death > meritObject.birth
-  //     ) {
-  //       allContemps.push(meritObject.firstName);
-  //     } else if (
-  //       entry.birth > meritObject.birth &&
-  //       entry.death < meritObject.death
-  //     ) {
-  //       allContemps.push(meritObject.firstName);
-  //     }
-  //   });
-  //   contemp.innerHTML = `<p>${allContemps}</p>`;
-  // }
+function findContemporary(clickedObject) {
+  let allContemps = [];
+  meritObjects.forEach((meritObject) => {
+    if (
+      clickedObject.birth <= meritObject.birth &&
+      clickedObject.death > meritObject.birth
+    ) {
+      allContemps.push(meritObject.firstName);
+    } else if (
+      clickedObject.birth > meritObject.birth &&
+      clickedObject.death < meritObject.death
+    ) {
+      allContemps.push(meritObject.firstName);
+    }
+
+    // Without this condiction, the name of the clicked person would be listed in the array of contemporaries.
+    if (allContemps.includes(clickedObject.firstName)) {
+      allContemps.splice(allContemps.indexOf(clickedObject.firstName), 1);
+    }
+  });
+  objectContemp.innerHTML = `<strong>${allContemps}</strong>`;
 }
 
 function renderNewModal() {
@@ -99,6 +100,7 @@ function renderNewModal() {
   let imgPath = clickedObject.img;
   document.getElementById("objectImg").src = imgPath;
 
+  findContemporary(clickedObject);
   lifeSpan();
 }
 
@@ -109,8 +111,6 @@ areaClickHandler = (event) => {
   allContemps.length = 0;
   const area = event.target;
   const chosenObject = area.title; //The name of element clicked on
-
-  // findContemporary(chosenObject);
 
   meritObjects.forEach((entry) => {
     const contemp = document.querySelector(".custom-title");
